@@ -5,14 +5,158 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.AbstractClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.AbstractClient.html",
+          "hash": "/FlBg0pcpx6gQwSxvMzXsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.EntityBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.EntityBase-1.html",
+          "hash": "sdlC7NuoXxmHEuAl2C0lTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IDeviceClient.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IDeviceClient.Factory.html",
+          "hash": "8wzuUxUZnvupc68Ym/lr1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IDeviceClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IDeviceClient.html",
+          "hash": "QdLGc4a3fJxKlwQ0fDEpow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IDeviceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IDeviceService.html",
+          "hash": "r5A/GIj8EmzmqwdqNWiASg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IDiscoveryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IDiscoveryService.html",
+          "hash": "iHsmx5TtparsptH6sPJ1LA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IFilterService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IFilterService.html",
+          "hash": "RT/dAHxv3Z6m6LW1TmWpmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IFirmwareService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IFirmwareService.html",
+          "hash": "HezbeuSFMS0dDfYFZQIYfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IPowerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IPowerService.html",
+          "hash": "SAVITP2D36Vc9quhSu9i2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VPEAR.Core.Abstractions.IRepository-2.yml",
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Abstractions.IRepository-2.html",
-          "hash": "7Je/AcfFJZN3mEl2xL2qJg=="
+          "hash": "VSbyaNc9/TVA1qiYOTmKlg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.ISensorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.ISensorService.html",
+          "hash": "GUULPBZrUCqMtjujrg6bLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IUserService.html",
+          "hash": "XFX29JTIW4qYcN2d3suE5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Abstractions.IWifiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Abstractions.IWifiService.html",
+          "hash": "1/n0d3dvQX/qMQrp/kkD4Q=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +165,178 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Abstractions.html",
-          "hash": "JyYe8P0tGrfUwuJNikj39A=="
+          "hash": "Z165RUvgObAU8x04sUSl5g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.DeviceClient.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.DeviceClient.Factory.html",
+          "hash": "PB70rtda8WUKopGzNoiL3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.DeviceClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.DeviceClient.html",
+          "hash": "1yNWkxvoLqZOO3PhUTIREw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.DeviceStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.DeviceStatus.html",
+          "hash": "AdPauRoGVohhtCKHzV2tQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Extensions.html",
+          "hash": "hfW3ojEN6H8JK/ZQhdsV7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Device.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Device.html",
+          "hash": "H09dwFAPY6RQqDbJdxb+FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Filter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Filter.html",
+          "hash": "Q4qcOg7voY00ctSdU6WB+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Firmware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Firmware.html",
+          "hash": "+zZi1ymJny5sv6SaNUDonQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Frame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Frame.html",
+          "hash": "9BiMDM1aTseKA+GrNP/lDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Sensor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Sensor.html",
+          "hash": "YNexBlfQKPodM7ydJcX5PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.Wifi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.Wifi.html",
+          "hash": "Pa4n+COVEIN+T/HmTYxxig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Models.html",
+          "hash": "B3ArZzBw/YhxXgGsRcF3NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Null.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Null.html",
+          "hash": "nfy+Is7Aekb5XySO7apfLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Result-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Result-1.html",
+          "hash": "P8eUOw0fSecOhX892lBiow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.VPEARClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.VPEARClient.html",
+          "hash": "kJjzbq1C5oCZVnFrbBLidw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +345,22 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Wrappers.ApiResponse.html",
-          "hash": "t5mU5FwesdYZU/+hMqfizA=="
+          "hash": "mKQD6cnEZrHIpJyBeCOqPQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.Container-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.Container-1.html",
+          "hash": "So+4r13hZ6VfPcBHeJmQjg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,34 +369,22 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Wrappers.DeviceResponse.html",
-          "hash": "90vt3JgJptSt1chTfp9aMw=="
+          "hash": "XpihEBz0UCr2UMqDjbKmgQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Core.Wrappers.FiltersResponse.yml",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.ErrorResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Core.Wrappers.FiltersResponse.html",
-          "hash": "2pQTrhBJONUmTb9T3IkIpQ=="
+          "relative_path": "api/VPEAR.Core.Wrappers.ErrorResponse.html",
+          "hash": "5rb/rA/ugqcgQP8EEln4HA=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Core.Wrappers.FirmwareResponse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Core.Wrappers.FirmwareResponse.html",
-          "hash": "yf1sC5iEv3+ziBi66cCm/g=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,46 +393,238 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Wrappers.FrameResponse.html",
-          "hash": "m5SCYRt6y1q8O3ACIF62OQ=="
+          "hash": "/vvBhcXFElA4PBMeT8qw1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Core.Wrappers.PowerResponse.yml",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetDeviceResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Core.Wrappers.PowerResponse.html",
-          "hash": "KBRdX1kratGkAIUJw8uBsg=="
+          "relative_path": "api/VPEAR.Core.Wrappers.GetDeviceResponse.html",
+          "hash": "mrfUKlHpU9gAIASz+hHtig=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Core.Wrappers.SensorResponse.yml",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetFiltersResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Core.Wrappers.SensorResponse.html",
-          "hash": "PRmrN3IEDtsB2q38tSka8A=="
+          "relative_path": "api/VPEAR.Core.Wrappers.GetFiltersResponse.html",
+          "hash": "zR+hq5nZS5QNHlyFVbhqhA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Core.Wrappers.WifiResponse.yml",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetFirmwareResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Core.Wrappers.WifiResponse.html",
-          "hash": "B17e6Hit00ILrNVYGcTFCw=="
+          "relative_path": "api/VPEAR.Core.Wrappers.GetFirmwareResponse.html",
+          "hash": "zjbyCHA6PY1nwnKS0jm5cA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetFrameResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetFrameResponse.html",
+          "hash": "tHnMPV3+6enB8LkXJbl+Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetFramesResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetFramesResponse.html",
+          "hash": "9m2mDGAOkSOJ2KQdA7lQaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetPowerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetPowerResponse.html",
+          "hash": "/A+w/LxJjdz2Dhcv403kag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetSensorResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetSensorResponse.html",
+          "hash": "gqpH+3CrzDC/RoILBhN11w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetSensorsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetSensorsResponse.html",
+          "hash": "XWkUDpD1ECW3mGtSdENxJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetUserResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetUserResponse.html",
+          "hash": "kJtbfKsEVdMT3ubXvMvftQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.GetWifiResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.GetWifiResponse.html",
+          "hash": "Hj4fhcw031PS4SQaKnsRgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PostDeviceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PostDeviceRequest.html",
+          "hash": "lKDuQpNh2JOMrIazwsEwRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PostRegisterRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PostRegisterRequest.html",
+          "hash": "WggAx93eQJ30NL7OkfqOiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutDeviceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutDeviceRequest.html",
+          "hash": "f6J8WVCXr2El/RBAe0xwMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutFilterRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutFilterRequest.html",
+          "hash": "RdaRaX0xVqyAtfPYUntaCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutFirmwareRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutFirmwareRequest.html",
+          "hash": "Hi4/7CDMqmSTAAN1503nrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutLoginRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutLoginRequest.html",
+          "hash": "xG0yLzKyrYRco/3EjnhBjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutLoginResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutLoginResponse.html",
+          "hash": "kRK7h5SOw3HIBNo9orPeuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutUserRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutUserRequest.html",
+          "hash": "T3wjqqiG9gfjQLZRA2xq3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.Wrappers.PutWifiRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.Wrappers.PutWifiRequest.html",
+          "hash": "LRCIkZi+rSV2n2mIOTGUMQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +633,58 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Core.Wrappers.html",
-          "hash": "TzekuIMOiTaODEpyhjw7LA=="
+          "hash": "Lyz3aBIjJ8YYpCb8SBmnCg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Core.html",
+          "hash": "ZBrg6PvqwDO2CfGuSAyQdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.ClientModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.ClientModule.html",
+          "hash": "mAaLh9unZD8yBjNOPTZlzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.Defaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.Defaults.html",
+          "hash": "6Zd1LEPUKBtb6lib4qh47Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.ErrorMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.ErrorMessages.html",
+          "hash": "GnQ05ALowOS66cPeugkhOg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +693,34 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Constants.Limits.html",
-          "hash": "WyyU3svZtpy76zigpeSOXw=="
+          "hash": "iWNtxeRzFV3jWAwGx6T6gg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.Regex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.Regex.html",
+          "hash": "7xk+r0VyTFl2JjhEdjYB+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.Roles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.Roles.html",
+          "hash": "gMZc4+h6DIpzRyjfhzR1Qw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +729,34 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Constants.Routes.html",
-          "hash": "52cRNvnRAHT+20qT35Xd0g=="
+          "hash": "+8/2v9oKv0AY8dQ8BJJ+QA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.Schemas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.Schemas.html",
+          "hash": "JK1fb7hjwheN6qGZgyZSYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Constants.WifiModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Constants.WifiModes.html",
+          "hash": "V6nOv/h4FsN2MStw+Y2WOg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Constants.html",
-          "hash": "ZF1/baUZRSO4CVvs5nVERg=="
+          "hash": "mBtyys25OwUwIngeRRhQqA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +777,94 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.BaseController.html",
-          "hash": "aJN50dJacgN7pg/Ejca/fA=="
+          "hash": "ULzrk1P8YtO6CHKkZ9PpoA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.DeviceController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.DeviceController.html",
+          "hash": "/XHRxruTB6/Xepa22iedIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.FilterController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.FilterController.html",
+          "hash": "ovxOCSzaXlVKRq18PXx/BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.FirmwareController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.FirmwareController.html",
+          "hash": "fx7fPPGFZlzkzbw6mEvcwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.PowerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.PowerController.html",
+          "hash": "ivWP32cqr1JnAXI7Vm6dug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.SensorController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.SensorController.html",
+          "hash": "Y0hBB/IP36uRSJUAvoF4eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.UserController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.UserController.html",
+          "hash": "yTVJIqIqetHF62qwND/Baw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Controllers.WifiController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Controllers.WifiController.html",
+          "hash": "ISgoKboZeCD8Yl6wkhsEWg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.html",
-          "hash": "AN6t51iSvU06DGkd1F+C8g=="
+          "hash": "vgzoIYJpANkry3kBiiuLqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,22 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.DeviceConfiguration.html",
-          "hash": "DYgKOCI0phh/E1549JtaWg=="
+          "hash": "5IyeNWXlEkZMVLwtU6228Q=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Db.EntityBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Db.EntityBase-1.html",
-          "hash": "7y/Tpsh/Nif2Opl3+0K1Fw=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.EntityBaseConfiguration-2.html",
-          "hash": "Psm6X2IYvLPvXKjFUzFpvw=="
+          "hash": "FjycU8fsiOQk1jJsrEBfBw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.FiltersConfiguration.html",
-          "hash": "E18TwhV04l/Gw/weQ8Iqug=="
+          "hash": "x9UV4kYh4lSnPYpgJBSLvA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.FirmwareConfiguration.html",
-          "hash": "2CBYVF1O7qn4SfbpCQTwqQ=="
+          "hash": "CHPQIWsUDpe0wPm1CnPZhQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,22 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.FrameConfiguration.html",
-          "hash": "e448M/aqx57GE0bwXKykPA=="
+          "hash": "nRZ+L8es2DzBKi/LqzItUw=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Db.PowerConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Db.PowerConfiguration.html",
-          "hash": "UI7Xge+UPLlsJm4G0TzKdA=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.Repository-3.html",
-          "hash": "Ph5YOsmXu9lNcsreLdnY7w=="
+          "hash": "zKHEN/fbPsgwutgal24ESQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.SensorConfiguration.html",
-          "hash": "njcluMDh0CCh3watiK5hYw=="
+          "hash": "2y03Pt+8Bo/AJ5Bri0K41g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.VPEARDbContext.html",
-          "hash": "bZ4IMjUZ21i26MSreA2FWQ=="
+          "hash": "wxIuVPkdC/zYzgmkfDHQTA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.WifiConfiguration.html",
-          "hash": "tMKTtN1FJXa5gUz/UGDsiQ=="
+          "hash": "+QgVVGUE7A8iWt3OYFBAEw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,106 +993,34 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Db.html",
-          "hash": "owx8gX+82lBBXiO3S3GIyA=="
+          "hash": "OrGiIGJhqcGD8VIaOlBQSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Device.yml",
+      "source_relative_path": "api/VPEAR.Server.Filters.GlobalExceptionFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Device.html",
-          "hash": "FA6Q5ycuwu9HAdQhmJiZVw=="
+          "relative_path": "api/VPEAR.Server.Filters.GlobalExceptionFilter.html",
+          "hash": "CDK7AC7kx5ohYEHRPG+x3w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Filters.yml",
+      "source_relative_path": "api/VPEAR.Server.Filters.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Filters.html",
-          "hash": "Sw9KzPfPoIK1W5WsvpIifg=="
+          "relative_path": "api/VPEAR.Server.Filters.html",
+          "hash": "MU7RU+R6S3Ujy5NSWhGY4A=="
         }
       },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Firmware.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Firmware.html",
-          "hash": "5mJ/YjsWCkEgaC0Z6TqbEA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Frame.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Frame.html",
-          "hash": "Mu+ov6hBfFv2oe0TZqxB2Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Power.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Power.html",
-          "hash": "JhXchkEgyRaTsWvut0savw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Sensor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Sensor.html",
-          "hash": "NKooOHmJ73JgcCq+deyE2Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.Wifi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.Wifi.html",
-          "hash": "gAd3WNNomejaKpelicbNHw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VPEAR.Server.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VPEAR.Server.Models.html",
-          "hash": "fdH//rnr/S3xlB8AFwnU/A=="
-        }
-      },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +1029,142 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Program.html",
-          "hash": "vTMGZt5LFztR78VgxLctfA=="
+          "hash": "vBH7EdvK8GfIRZzQioVzcQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.RepositoryModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.RepositoryModule.html",
+          "hash": "jEnORJ/oeSn/WVJtwjQopw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.ServiceModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.ServiceModule.html",
+          "hash": "wNjXn5FT2WZ2k3niTUGgSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.DeviceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.DeviceService.html",
+          "hash": "HRPaLze6kzVex9PohLe+HQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.DiscoveryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.DiscoveryService.html",
+          "hash": "Y1mef0cgOclpI1D4u5IIQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.FilterService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.FilterService.html",
+          "hash": "WDSiQGexM1mruLV/3zexCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.FirmwareService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.FirmwareService.html",
+          "hash": "DGTvGB+vgRWnc6qRcr7PoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.PowerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.PowerService.html",
+          "hash": "apgYzpfTn0xfAYkhXGd+Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.SensorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.SensorService.html",
+          "hash": "ikKmrh3+pA0I4go1zkDbIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.UserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.UserService.html",
+          "hash": "FdY0WjtypuNayt1h0n5wzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.WifiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.WifiService.html",
+          "hash": "SnzkMLsnHXWVkg9IclCqUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Services.html",
+          "hash": "4jETHijYHfGGaC6SFtVWGQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +1173,130 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Startup.html",
-          "hash": "V652Rc7JkMefMfbCLxBfZg=="
+          "hash": "LxLOc7NqLhuRGhZy62R6Mg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.ValidatorModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.ValidatorModule.html",
+          "hash": "PGcwdoW6QlH1z+5WRCgFdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PostDeviceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PostDeviceValidator.html",
+          "hash": "3Ri3xM/qh6kqrT38J5b54w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PostRegisterValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PostRegisterValidator.html",
+          "hash": "lH+JGYHM+DhlMPV/by1Nmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutDeviceValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutDeviceValidator.html",
+          "hash": "otpstDoGEoXhiMDwAEyvhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutFilterValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutFilterValidator.html",
+          "hash": "2Q8t0q0rkfUkjfKq1Gehsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutFirmwareValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutFirmwareValidator.html",
+          "hash": "6iPhIo8G5xgfbrpqJ4rwuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutLoginValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutLoginValidator.html",
+          "hash": "M04RO5CvJPC1SYJ3XjdnBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutUserValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutUserValidator.html",
+          "hash": "tu0NXCQ2qHDahnAt8LB/Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.PutWifiValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.PutWifiValidator.html",
+          "hash": "RgnQmUwUOUCjrlxXoXhlWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Validators.html",
+          "hash": "zEpIKQioUUX3pTg9HpDrmg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +1305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.html",
-          "hash": "A807BUTvSUhZXgey2u05wA=="
+          "hash": "71NyhsSOQ9jaX9JQz1RLXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1UYO8q5pM01R/ezHQdeXqQ=="
+          "hash": "6seUOftSIH8PwwsLBWYBaw=="
         }
       },
       "is_incremental": false,
@@ -565,8 +1405,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 39,
-          "skipped_file_count": 39
+          "total_file_count": 109,
+          "skipped_file_count": 10
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

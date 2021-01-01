@@ -145,19 +145,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3__ctor__0_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3__ctor__0_Microsoft_Extensions_Logging_ILogger_VPEAR_Core_Abstractions_IRepository__1__2___.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.%23ctor(%600%2CMicrosoft.Extensions.Logging.ILogger%7BVPEAR.Core.Abstractions.IRepository%7B%601%2C%602%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L31">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L34">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3__ctor_" data-uid="VPEAR.Server.Db.Repository`3.#ctor*"></a>
-  <h4 id="VPEAR_Server_Db_Repository_3__ctor__0_" data-uid="VPEAR.Server.Db.Repository`3.#ctor(`0)">Repository(TDbContext)</h4>
+  <h4 id="VPEAR_Server_Db_Repository_3__ctor__0_Microsoft_Extensions_Logging_ILogger_VPEAR_Core_Abstractions_IRepository__1__2___" data-uid="VPEAR.Server.Db.Repository`3.#ctor(`0,Microsoft.Extensions.Logging.ILogger{VPEAR.Core.Abstractions.IRepository{`1,`2}})">Repository(TDbContext, ILogger&lt;IRepository&lt;TEntity, TKey&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Server.Db.Repository-3.html">Repository&lt;TDbContext, TEntity, TKey&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Repository(TDbContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public Repository(TDbContext context, ILogger&lt;IRepository&lt;TEntity, TKey&gt;&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,6 +175,12 @@
         <td><p>The connection to the db.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;TEntity, TKey&gt;&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The repository logger.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -184,11 +190,12 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_CreateAsync__1_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.CreateAsync(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L42">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L41">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3_CreateAsync_" data-uid="VPEAR.Server.Db.Repository`3.CreateAsync*"></a>
   <h4 id="VPEAR_Server_Db_Repository_3_CreateAsync__1_" data-uid="VPEAR.Server.Db.Repository`3.CreateAsync(`1)">CreateAsync(TEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new database entry.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +214,8 @@
       <tr>
         <td><span class="xref">TEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p>The entity to save in the database.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -222,24 +230,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>The success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_DeleteAsync__2_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.DeleteAsync(%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_DeleteAsync__1_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.DeleteAsync(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L51">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L60">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3_DeleteAsync_" data-uid="VPEAR.Server.Db.Repository`3.DeleteAsync*"></a>
-  <h4 id="VPEAR_Server_Db_Repository_3_DeleteAsync__2_" data-uid="VPEAR.Server.Db.Repository`3.DeleteAsync(`2)">DeleteAsync(TKey)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="VPEAR_Server_Db_Repository_3_DeleteAsync__1_" data-uid="VPEAR.Server.Db.Repository`3.DeleteAsync(`1)">DeleteAsync(TEntity)</h4>
+  <div class="markdown level1 summary"><p>Deletes an entry from the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteAsync(TKey id)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; DeleteAsync(TEntity entity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -252,9 +262,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TKey</span></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entry to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -269,7 +280,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>The success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -278,11 +290,13 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_Get.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L61">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L79">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3_Get_" data-uid="VPEAR.Server.Db.Repository`3.Get*"></a>
   <h4 id="VPEAR_Server_Db_Repository_3_Get" data-uid="VPEAR.Server.Db.Repository`3.Get">Get()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all entries from the database table.
+NOTE: Use this to make selects on the table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -299,7 +313,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p><span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object for database queries.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -308,11 +323,12 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_GetAsync__2_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.GetAsync(%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L67">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L85">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3_GetAsync_" data-uid="VPEAR.Server.Db.Repository`3.GetAsync*"></a>
   <h4 id="VPEAR_Server_Db_Repository_3_GetAsync__2_" data-uid="VPEAR.Server.Db.Repository`3.GetAsync(`2)">GetAsync(TKey)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an entry from the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -331,7 +347,8 @@
       <tr>
         <td><span class="xref">TKey</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The id from the database entry.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -346,7 +363,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p>The complete entity or null, if id not exists.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -355,11 +373,12 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3_UpdateAsync__1_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603.UpdateAsync(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L75">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L103">View Source</a>
   </span>
   <a id="VPEAR_Server_Db_Repository_3_UpdateAsync_" data-uid="VPEAR.Server.Db.Repository`3.UpdateAsync*"></a>
   <h4 id="VPEAR_Server_Db_Repository_3_UpdateAsync__1_" data-uid="VPEAR.Server.Db.Repository`3.UpdateAsync(`1)">UpdateAsync(TEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an entry in the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -378,7 +397,8 @@
       <tr>
         <td><span class="xref">TEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p>The entity to update.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -393,13 +413,18 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>The success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository&lt;TEntity, TKey&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -412,7 +437,7 @@
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Db_Repository_3.md&amp;value=---%0Auid%3A%20VPEAR.Server.Db.Repository%603%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Db/Repository.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
