@@ -119,18 +119,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Device_System_Guid__VPEAR_Core_Abstractions_IDiscoveryService_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.%23ctor(VPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Models.Device%2CSystem.Guid%7D%2CVPEAR.Core.Abstractions.IDiscoveryService%2CMicrosoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.DeviceController%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__VPEAR_Core_Abstractions_IDiscoveryService_VPEAR_Core_DeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.%23ctor(VPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Entities.Device%2CSystem.Guid%7D%2CVPEAR.Core.Abstractions.IDiscoveryService%2CVPEAR.Core.DeviceClient.Factory%2CMicrosoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.DeviceController%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L31">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L42">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_DeviceService__ctor_" data-uid="VPEAR.Server.Services.DeviceService.#ctor*"></a>
-  <h4 id="VPEAR_Server_Services_DeviceService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Device_System_Guid__VPEAR_Core_Abstractions_IDiscoveryService_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__" data-uid="VPEAR.Server.Services.DeviceService.#ctor(VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Models.Device,System.Guid},VPEAR.Core.Abstractions.IDiscoveryService,Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.DeviceController})">DeviceService(IRepository&lt;Device, Guid&gt;, IDiscoveryService, ILogger&lt;DeviceController&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="VPEAR_Server_Services_DeviceService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__VPEAR_Core_Abstractions_IDiscoveryService_VPEAR_Core_DeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__" data-uid="VPEAR.Server.Services.DeviceService.#ctor(VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Entities.Device,System.Guid},VPEAR.Core.Abstractions.IDiscoveryService,VPEAR.Core.DeviceClient.Factory,Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.DeviceController})">DeviceService(IRepository&lt;Device, Guid&gt;, IDiscoveryService, DeviceClient.Factory, ILogger&lt;DeviceController&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Server.Services.DeviceService.html">DeviceService</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DeviceService(IRepository&lt;Device, Guid&gt; devices, IDiscoveryService discovery, ILogger&lt;DeviceController&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public DeviceService(IRepository&lt;Device, Guid&gt; devices, IDiscoveryService discovery, DeviceClient.Factory factory, ILogger&lt;DeviceController&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,19 +144,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Models.Device.html">Device</a>, <span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Entities.Device.html">Device</a>, <span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">devices</span></td>
-        <td></td>
+        <td><p>The device repository.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="VPEAR.Core.Abstractions.IDiscoveryService.html">IDiscoveryService</a></td>
         <td><span class="parametername">discovery</span></td>
-        <td></td>
+        <td><p>The discovery service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VPEAR.Core.DeviceClient.Factory.html">DeviceClient.Factory</a></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>The device client factory.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="VPEAR.Server.Controllers.DeviceController.html">DeviceController</a>&gt;</td>
         <td><span class="parametername">logger</span></td>
-        <td></td>
+        <td><p>The service logger.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -166,7 +176,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService_DeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.DeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L129">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L149">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_DeviceService_DeleteAsync_" data-uid="VPEAR.Server.Services.DeviceService.DeleteAsync*"></a>
   <h4 id="VPEAR_Server_Services_DeviceService_DeleteAsync_System_Guid_" data-uid="VPEAR.Server.Services.DeviceService.DeleteAsync(System.Guid)">DeleteAsync(Guid)</h4>
@@ -210,18 +220,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService_GetAsync_VPEAR_Core_DeviceStatus_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.GetAsync(VPEAR.Core.DeviceStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService_GetAsync_System_Nullable_VPEAR_Core_DeviceStatus__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.GetAsync(System.Nullable%7BVPEAR.Core.DeviceStatus%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L42">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L55">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_DeviceService_GetAsync_" data-uid="VPEAR.Server.Services.DeviceService.GetAsync*"></a>
-  <h4 id="VPEAR_Server_Services_DeviceService_GetAsync_VPEAR_Core_DeviceStatus_" data-uid="VPEAR.Server.Services.DeviceService.GetAsync(VPEAR.Core.DeviceStatus)">GetAsync(DeviceStatus)</h4>
+  <h4 id="VPEAR_Server_Services_DeviceService_GetAsync_System_Nullable_VPEAR_Core_DeviceStatus__" data-uid="VPEAR.Server.Services.DeviceService.GetAsync(System.Nullable{VPEAR.Core.DeviceStatus})">GetAsync(Nullable&lt;DeviceStatus&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Result&lt;Container&lt;GetDeviceResponse&gt;&gt;&gt; GetAsync(DeviceStatus deviceStatus)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Result&lt;Container&lt;GetDeviceResponse&gt;&gt;&gt; GetAsync(DeviceStatus? deviceStatus)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -234,7 +244,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a></td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a>&gt;</td>
         <td><span class="parametername">deviceStatus</span></td>
         <td></td>
       </tr>
@@ -260,7 +270,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService_PostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.PostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L111">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L131">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_DeviceService_PostAsync_" data-uid="VPEAR.Server.Services.DeviceService.PostAsync*"></a>
   <h4 id="VPEAR_Server_Services_DeviceService_PostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_" data-uid="VPEAR.Server.Services.DeviceService.PostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)">PostAsync(PostDeviceRequest)</h4>
@@ -307,7 +317,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService.PutAsync(System.Guid%2CVPEAR.Core.Wrappers.PutDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L74">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L92">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_DeviceService_PutAsync_" data-uid="VPEAR.Server.Services.DeviceService.PutAsync*"></a>
   <h4 id="VPEAR_Server_Services_DeviceService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_" data-uid="VPEAR.Server.Services.DeviceService.PutAsync(System.Guid,VPEAR.Core.Wrappers.PutDeviceRequest)">PutAsync(Guid, PutDeviceRequest)</h4>
@@ -360,7 +370,10 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -373,7 +386,7 @@
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_DeviceService.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.DeviceService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/DeviceService.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

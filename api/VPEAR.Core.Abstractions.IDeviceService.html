@@ -90,11 +90,12 @@ injection and webapi controllers.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDeviceService_DeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDeviceService.DeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L24">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L45">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IDeviceService_DeleteAsync_" data-uid="VPEAR.Core.Abstractions.IDeviceService.DeleteAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IDeviceService_DeleteAsync_System_Guid_" data-uid="VPEAR.Core.Abstractions.IDeviceService.DeleteAsync(System.Guid)">DeleteAsync(Guid)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes the given device.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -113,7 +114,8 @@ injection and webapi controllers.</p>
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The device id.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -128,24 +130,26 @@ injection and webapi controllers.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Null.html">Null</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, which indicates the success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDeviceService_GetAsync_VPEAR_Core_DeviceStatus_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDeviceService.GetAsync(VPEAR.Core.DeviceStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDeviceService_GetAsync_System_Nullable_VPEAR_Core_DeviceStatus__.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDeviceService.GetAsync(System.Nullable%7BVPEAR.Core.DeviceStatus%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L18">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L23">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IDeviceService_GetAsync_" data-uid="VPEAR.Core.Abstractions.IDeviceService.GetAsync*"></a>
-  <h4 id="VPEAR_Core_Abstractions_IDeviceService_GetAsync_VPEAR_Core_DeviceStatus_" data-uid="VPEAR.Core.Abstractions.IDeviceService.GetAsync(VPEAR.Core.DeviceStatus)">GetAsync(DeviceStatus)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="VPEAR_Core_Abstractions_IDeviceService_GetAsync_System_Nullable_VPEAR_Core_DeviceStatus__" data-uid="VPEAR.Core.Abstractions.IDeviceService.GetAsync(System.Nullable{VPEAR.Core.DeviceStatus})">GetAsync(Nullable&lt;DeviceStatus&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches for devices with the given status. If no status provided all devices will be returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;Result&lt;Container&lt;GetDeviceResponse&gt;&gt;&gt; GetAsync(DeviceStatus status)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;Result&lt;Container&lt;GetDeviceResponse&gt;&gt;&gt; GetAsync(DeviceStatus? status)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,9 +162,10 @@ injection and webapi controllers.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a></td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a>&gt;</td>
         <td><span class="parametername">status</span></td>
-        <td></td>
+        <td><p>The specific device status.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -175,7 +180,8 @@ injection and webapi controllers.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.Container-1.html">Container</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetDeviceResponse.html">GetDeviceResponse</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, which contains the devices with the given state.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -184,11 +190,12 @@ injection and webapi controllers.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDeviceService_PostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDeviceService.PostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L22">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L38">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IDeviceService_PostAsync_" data-uid="VPEAR.Core.Abstractions.IDeviceService.PostAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IDeviceService_PostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_" data-uid="VPEAR.Core.Abstractions.IDeviceService.PostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)">PostAsync(PostDeviceRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts the device discovery serice an searches for devices.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +214,8 @@ injection and webapi controllers.</p>
       <tr>
         <td><a class="xref" href="VPEAR.Core.Wrappers.PostDeviceRequest.html">PostDeviceRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The request data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -222,7 +230,8 @@ injection and webapi controllers.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Null.html">Null</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, which indicates the success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -231,11 +240,12 @@ injection and webapi controllers.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDeviceService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDeviceService.PutAsync(System.Guid%2CVPEAR.Core.Wrappers.PutDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L20">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDeviceService.cs/#L31">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IDeviceService_PutAsync_" data-uid="VPEAR.Core.Abstractions.IDeviceService.PutAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IDeviceService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_" data-uid="VPEAR.Core.Abstractions.IDeviceService.PutAsync(System.Guid,VPEAR.Core.Wrappers.PutDeviceRequest)">PutAsync(Guid, PutDeviceRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the given device.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,12 +264,14 @@ injection and webapi controllers.</p>
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The device id.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="VPEAR.Core.Wrappers.PutDeviceRequest.html">PutDeviceRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The request data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -274,13 +286,17 @@ injection and webapi controllers.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Null.html">Null</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, which indicates the success of the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>

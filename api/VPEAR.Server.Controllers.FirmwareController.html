@@ -766,6 +766,8 @@ public class FirmwareController : Controller, IActionFilter, IAsyncActionFilter,
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
+[SwaggerResponse(410, &quot;Device is archived.&quot;, typeof(ErrorResponse))]
+[SwaggerResponse(424, &quot;Device is not reachable.&quot;, typeof(ErrorResponse))]
 public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] Guid id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -819,7 +821,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] Guid id)</code
     <pre><code class="lang-csharp hljs">[HttpPut]
 [Authorize(Roles = &quot;admin&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
-[SwaggerResponse(200, &quot;Firmware information were saved to device and db.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;Firmware information were saved to device and db.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
@@ -885,7 +887,10 @@ public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] Guid id, [From
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>

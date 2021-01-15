@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VPEARDbContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VPEARDbContext
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VPEAR.Server.Data.VPEARDbContext">
+  
+  
+  <h1 id="VPEAR_Server_Data_VPEARDbContext" data-uid="VPEAR.Server.Data.VPEARDbContext" class="text-break">Class VPEARDbContext
+  </h1>
+  <div class="markdown level0 summary"><p>The db context for the server.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.EntityFrameworkCore.DbContext</span></div>
+    <div class="level2"><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityUser</span>, <span class="xref">System.String</span>, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserClaim</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserLogin</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserToken</span>&lt;<span class="xref">System.String</span>&gt;&gt;</div>
+    <div class="level3"><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityUser</span>, <span class="xref">Microsoft.AspNetCore.Identity.IdentityRole</span>, <span class="xref">System.String</span>, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserClaim</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserRole</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserLogin</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityRoleClaim</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">Microsoft.AspNetCore.Identity.IdentityUserToken</span>&lt;<span class="xref">System.String</span>&gt;&gt;</div>
+    <div class="level4"><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityUser</span>, <span class="xref">Microsoft.AspNetCore.Identity.IdentityRole</span>, <span class="xref">System.String</span>&gt;</div>
+    <div class="level5"><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityUser</span>&gt;</div>
+    <div class="level6"><span class="xref">VPEARDbContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure</span>&lt;<span class="xref">System.IServiceProvider</span>&gt;</div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.IAsyncDisposable</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IResettableService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.AspNetCore.Identity.IdentityRole, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserRole&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityRoleClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.AspNetCore.Identity.IdentityRole, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserRole&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityRoleClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.UserRoles</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.AspNetCore.Identity.IdentityRole, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserRole&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityRoleClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.Roles</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.AspNetCore.Identity.IdentityRole, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserRole&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityRoleClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.RoleClaims</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.UserClaims</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.UserLogins</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.UserTokens</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.String, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.ClearLease()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SetLease(Microsoft.EntityFrameworkCore.Internal.DbContextLease)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SnapshotConfiguration()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetState()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetStateAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync&lt;TEntity&gt;(TEntity, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync(System.Object, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FromExpression&lt;TResult&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;System.Linq.IQueryable&lt;TResult&gt;&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Database</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ChangeTracker</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Model</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ContextId</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.SetSource</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QueryProvider</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.StateManager</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.ChangeDetector</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityGraphAttacher</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.UpdateLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.InfrastructureLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SavingChanges</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SavedChanges</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesFailed</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VPEAR.Server.Data.html">VPEAR.Server.Data</a></h6>
+  <h6><strong>Assembly</strong>: VPEAR.Server.dll</h6>
+  <h5 id="VPEAR_Server_Data_VPEARDbContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VPEARDbContext : IdentityDbContext&lt;IdentityUser&gt;, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IDisposable, IAsyncDisposable, IResettableService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_VPEAR_Server_Data_VPEARDbContext__MediatR_IMediator_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.%23ctor(Microsoft.EntityFrameworkCore.DbContextOptions%7BVPEAR.Server.Data.VPEARDbContext%7D%2CMediatR.IMediator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L32">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext__ctor_" data-uid="VPEAR.Server.Data.VPEARDbContext.#ctor*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_VPEAR_Server_Data_VPEARDbContext__MediatR_IMediator_" data-uid="VPEAR.Server.Data.VPEARDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{VPEAR.Server.Data.VPEARDbContext},MediatR.IMediator)">VPEARDbContext(DbContextOptions&lt;VPEARDbContext&gt;, IMediator)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Server.Data.VPEARDbContext.html">VPEARDbContext</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VPEARDbContext(DbContextOptions&lt;VPEARDbContext&gt; options, IMediator mediator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbContextOptions</span>&lt;<a class="xref" href="VPEAR.Server.Data.VPEARDbContext.html">VPEARDbContext</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options for the db context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MediatR.IMediator</span></td>
+        <td><span class="parametername">mediator</span></td>
+        <td><p>The mediator to dispatch events.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_Devices.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.Devices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L42">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_Devices_" data-uid="VPEAR.Server.Data.VPEARDbContext.Devices*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_Devices" data-uid="VPEAR.Server.Data.VPEARDbContext.Devices">Devices</h4>
+  <div class="markdown level1 summary"><p>Gets or sets devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Device&gt; Devices { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="VPEAR.Core.Entities.Device.html">Device</a>&gt;</td>
+        <td><p>All devices in the db.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_Filters.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.Filters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L48">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_Filters_" data-uid="VPEAR.Server.Data.VPEARDbContext.Filters*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_Filters" data-uid="VPEAR.Server.Data.VPEARDbContext.Filters">Filters</h4>
+  <div class="markdown level1 summary"><p>Gets or sets filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Filter&gt; Filters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="VPEAR.Core.Entities.Filter.html">Filter</a>&gt;</td>
+        <td><p>All filters in the db.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_Frames.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.Frames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L54">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_Frames_" data-uid="VPEAR.Server.Data.VPEARDbContext.Frames*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_Frames" data-uid="VPEAR.Server.Data.VPEARDbContext.Frames">Frames</h4>
+  <div class="markdown level1 summary"><p>Gets or sets frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Frame&gt; Frames { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="VPEAR.Core.Entities.Frame.html">Frame</a>&gt;</td>
+        <td><p>All frames in the db.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L108">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_OnModelCreating_" data-uid="VPEAR.Server.Data.VPEARDbContext.OnModelCreating*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="VPEAR.Server.Data.VPEARDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <div class="markdown level1 summary"><p>Creates and configures the db model for the entities.
+NOTE: Only called by entity framework.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.ModelBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>The Entity Framework Core model builder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityDbContext&lt;Microsoft.AspNetCore.Identity.IdentityUser, Microsoft.AspNetCore.Identity.IdentityRole, System.String, Microsoft.AspNetCore.Identity.IdentityUserClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserRole&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserLogin&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityRoleClaim&lt;System.String&gt;, Microsoft.AspNetCore.Identity.IdentityUserToken&lt;System.String&gt;&gt;.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_SaveChanges.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.SaveChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L60">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_SaveChanges_" data-uid="VPEAR.Server.Data.VPEARDbContext.SaveChanges*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_SaveChanges" data-uid="VPEAR.Server.Data.VPEARDbContext.SaveChanges">SaveChanges()</h4>
+  <div class="markdown level1 summary"><p>Saves all changes made in this context to the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SaveChanges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of state entries written to the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext_SaveChangesAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext.SaveChangesAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L72">View Source</a>
+  </span>
+  <a id="VPEAR_Server_Data_VPEARDbContext_SaveChangesAsync_" data-uid="VPEAR.Server.Data.VPEARDbContext.SaveChangesAsync*"></a>
+  <h4 id="VPEAR_Server_Data_VPEARDbContext_SaveChangesAsync_System_Threading_CancellationToken_" data-uid="VPEAR.Server.Data.VPEARDbContext.SaveChangesAsync(System.Threading.CancellationToken)">SaveChangesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Saves all changes made in this context to the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;int&gt; SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>A task that represents the asynchronous save operation. The task result contains the number of state entries written to the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.IAsyncDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IResettableService</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Data_VPEARDbContext.md&amp;value=---%0Auid%3A%20VPEAR.Server.Data.VPEARDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Data/VPEARDbContext.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

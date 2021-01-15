@@ -750,7 +750,7 @@ public class UserController : Controller, IActionFilter, IAsyncActionFilter, IFi
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_UserController_OnDeleteAsync_System_String_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.UserController.OnDeleteAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L94">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L90">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_UserController_OnDeleteAsync_" data-uid="VPEAR.Server.Controllers.UserController.OnDeleteAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_UserController_OnDeleteAsync_System_String_" data-uid="VPEAR.Server.Controllers.UserController.OnDeleteAsync(System.String)">OnDeleteAsync(String)</h4>
@@ -762,11 +762,11 @@ public class UserController : Controller, IActionFilter, IAsyncActionFilter, IFi
     <pre><code class="lang-csharp hljs">[HttpDelete]
 [Authorize(Roles = &quot;admin&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
-[SwaggerResponse(200, &quot;User was deleted from db.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;User was deleted from db.&quot;, typeof(Null))]
 [SwaggerResponse(401, &quot;Request is not authorized.&quot;, typeof(Null))]
 [SwaggerResponse(403, &quot;Last admin will not be deleted.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(404, &quot;No user found.&quot;, typeof(ErrorResponse))]
-public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] string id = &quot;&quot;)</code></pre>
+public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] string name = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -780,8 +780,8 @@ public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] string id =
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>The user id.</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>The user name.</p>
 </td>
       </tr>
     </tbody>
@@ -863,7 +863,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery] string role)</code></pre
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_UserController_OnPostRegisterAsync_VPEAR_Core_Wrappers_PostRegisterRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.UserController.OnPostRegisterAsync(VPEAR.Core.Wrappers.PostRegisterRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L117">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L111">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_UserController_OnPostRegisterAsync_" data-uid="VPEAR.Server.Controllers.UserController.OnPostRegisterAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_UserController_OnPostRegisterAsync_VPEAR_Core_Wrappers_PostRegisterRequest_" data-uid="VPEAR.Server.Controllers.UserController.OnPostRegisterAsync(VPEAR.Core.Wrappers.PostRegisterRequest)">OnPostRegisterAsync(PostRegisterRequest)</h4>
@@ -873,9 +873,10 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery] string role)</code></pre
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPost]
+[AllowAnonymous]
 [Route(&quot;/api/v1/user/register&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
-[SwaggerResponse(200, &quot;User was registered.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;User was registered.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(409, &quot;Email is already used.&quot;, typeof(ErrorResponse))]
 public Task&lt;IActionResult&gt; OnPostRegisterAsync([FromBody, Required] PostRegisterRequest request)</code></pre>
@@ -919,7 +920,7 @@ public Task&lt;IActionResult&gt; OnPostRegisterAsync([FromBody, Required] PostRe
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_UserController_OnPutAsync_System_String_VPEAR_Core_Wrappers_PutUserRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.UserController.OnPutAsync(System.String%2CVPEAR.Core.Wrappers.PutUserRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L71">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L69">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_UserController_OnPutAsync_" data-uid="VPEAR.Server.Controllers.UserController.OnPutAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_UserController_OnPutAsync_System_String_VPEAR_Core_Wrappers_PutUserRequest_" data-uid="VPEAR.Server.Controllers.UserController.OnPutAsync(System.String,VPEAR.Core.Wrappers.PutUserRequest)">OnPutAsync(String, PutUserRequest)</h4>
@@ -931,11 +932,11 @@ public Task&lt;IActionResult&gt; OnPostRegisterAsync([FromBody, Required] PostRe
     <pre><code class="lang-csharp hljs">[HttpPut]
 [Authorize(Roles = &quot;admin&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
-[SwaggerResponse(200, &quot;User was updated and saved to db.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;User was updated and saved to db.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is not authorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;No user found.&quot;, typeof(ErrorResponse))]
-public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] string id, [FromQuery, Required] PutUserRequest request)</code></pre>
+public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] string name, [FromBody, Required] PutUserRequest request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -949,8 +950,8 @@ public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] string id, [Fr
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>The user id.</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>The user name.</p>
 </td>
       </tr>
       <tr>
@@ -982,7 +983,7 @@ public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] string id, [Fr
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_UserController_OnPutLoginAsync_VPEAR_Core_Wrappers_PutLoginRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.UserController.OnPutLoginAsync(VPEAR.Core.Wrappers.PutLoginRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L139">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/UserController.cs/#L132">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_UserController_OnPutLoginAsync_" data-uid="VPEAR.Server.Controllers.UserController.OnPutLoginAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_UserController_OnPutLoginAsync_VPEAR_Core_Wrappers_PutLoginRequest_" data-uid="VPEAR.Server.Controllers.UserController.OnPutLoginAsync(VPEAR.Core.Wrappers.PutLoginRequest)">OnPutLoginAsync(PutLoginRequest)</h4>
@@ -992,6 +993,7 @@ public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] string id, [Fr
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPut]
+[AllowAnonymous]
 [Route(&quot;/api/v1/user/login&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
 [SwaggerResponse(200, &quot;User was logged in.&quot;, typeof(PutLoginResponse))]
@@ -1048,7 +1050,10 @@ public Task&lt;IActionResult&gt; OnPutLoginAsync([FromBody, Required] PutLoginRe
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>

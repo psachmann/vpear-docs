@@ -1,0 +1,789 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VPEAR.Core.Abstractions.AbstractClient">
+  
+  
+  <h1 id="VPEAR_Core_Abstractions_AbstractClient" data-uid="VPEAR.Core.Abstractions.AbstractClient" class="text-break">Class AbstractClient
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for clients. It implements some base functionality.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AbstractClient</span></div>
+      <div class="level2"><a class="xref" href="VPEAR.Core.DeviceClient.html">DeviceClient</a></div>
+      <div class="level2"><a class="xref" href="VPEAR.Core.VPEARClient.html">VPEARClient</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VPEAR.Core.Abstractions.html">VPEAR.Core.Abstractions</a></h6>
+  <h6><strong>Assembly</strong>: VPEAR.Core.dll</h6>
+  <h5 id="VPEAR_Core_Abstractions_AbstractClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractClient : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient__ctor_System_String_System_Net_Http_HttpClient_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.%23ctor(System.String%2CSystem.Net.Http.HttpClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L57">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient__ctor_" data-uid="VPEAR.Core.Abstractions.AbstractClient.#ctor*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient__ctor_System_String_System_Net_Http_HttpClient_" data-uid="VPEAR.Core.Abstractions.AbstractClient.#ctor(System.String,System.Net.Http.HttpClient)">AbstractClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html">AbstractClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractClient(string baseAddress, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>The base address to connect to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The http client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient__ctor_System_String_System_Net_Http_IHttpClientFactory_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.%23ctor(System.String%2CSystem.Net.Http.IHttpClientFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L29">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient__ctor_" data-uid="VPEAR.Core.Abstractions.AbstractClient.#ctor*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient__ctor_System_String_System_Net_Http_IHttpClientFactory_" data-uid="VPEAR.Core.Abstractions.AbstractClient.#ctor(System.String,System.Net.Http.IHttpClientFactory)">AbstractClient(String, IHttpClientFactory)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html">AbstractClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractClient(string baseAddress, IHttpClientFactory factory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>The base address to connect to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.IHttpClientFactory</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>The http client factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_BaseAddress.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.BaseAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L119">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_BaseAddress_" data-uid="VPEAR.Core.Abstractions.AbstractClient.BaseAddress*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_BaseAddress" data-uid="VPEAR.Core.Abstractions.AbstractClient.BaseAddress">BaseAddress</h4>
+  <div class="markdown level1 summary"><p>Gets the base address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string BaseAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The client base address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_Client.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L131">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_Client_" data-uid="VPEAR.Core.Abstractions.AbstractClient.Client*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_Client" data-uid="VPEAR.Core.Abstractions.AbstractClient.Client">Client</h4>
+  <div class="markdown level1 summary"><p>Gets the http client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HttpClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><p>The http client which executes the http requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_Error.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.Error%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L84">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_Error_" data-uid="VPEAR.Core.Abstractions.AbstractClient.Error*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_Error" data-uid="VPEAR.Core.Abstractions.AbstractClient.Error">Error</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception Error { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>The occurred client error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_Response.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.Response%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L101">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_Response_" data-uid="VPEAR.Core.Abstractions.AbstractClient.Response*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_Response" data-uid="VPEAR.Core.Abstractions.AbstractClient.Response">Response</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the http response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseMessage Response { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpResponseMessage</span></td>
+        <td><p>The http response for the http request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_CanConnectAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.CanConnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L143">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_CanConnectAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.CanConnectAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_CanConnectAsync" data-uid="VPEAR.Core.Abstractions.AbstractClient.CanConnectAsync">CanConnectAsync()</h4>
+  <div class="markdown level1 summary"><p>Indicates whether can connect to the destination or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; CanConnectAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if we can connect, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_DeleteAsync_System_String_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.DeleteAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L169">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_DeleteAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.DeleteAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_DeleteAsync_System_String_" data-uid="VPEAR.Core.Abstractions.AbstractClient.DeleteAsync(System.String)">DeleteAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Makes a http DELETE request to the given uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; DeleteAsync(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The request uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the request was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_Dispose.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L148">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_Dispose_" data-uid="VPEAR.Core.Abstractions.AbstractClient.Dispose*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_Dispose" data-uid="VPEAR.Core.Abstractions.AbstractClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the client and response resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_GetAsync_System_String_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.GetAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L179">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_GetAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.GetAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_GetAsync_System_String_" data-uid="VPEAR.Core.Abstractions.AbstractClient.GetAsync(System.String)">GetAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Makes a http GET request to the given uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; GetAsync(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The request uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the request was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_IsSuccessResponse.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.IsSuccessResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L159">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_IsSuccessResponse_" data-uid="VPEAR.Core.Abstractions.AbstractClient.IsSuccessResponse*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_IsSuccessResponse" data-uid="VPEAR.Core.Abstractions.AbstractClient.IsSuccessResponse">IsSuccessResponse()</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the response is successful or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuccessResponse()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the response was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_PostAsync__1_System_String___0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.PostAsync%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L191">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_PostAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.PostAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_PostAsync__1_System_String___0_" data-uid="VPEAR.Core.Abstractions.AbstractClient.PostAsync``1(System.String,``0)">PostAsync&lt;TPayload&gt;(String, TPayload)</h4>
+  <div class="markdown level1 summary"><p>Makes a http POST request to the given uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; PostAsync&lt;TPayload&gt;(string uri, TPayload payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The request uri.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TPayload</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td><p>The request payload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the request was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPayload</span></td>
+        <td><p>The payload type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_PutAsync__1_System_String___0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.PutAsync%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L203">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_PutAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.PutAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_PutAsync__1_System_String___0_" data-uid="VPEAR.Core.Abstractions.AbstractClient.PutAsync``1(System.String,``0)">PutAsync&lt;TPayload&gt;(String, TPayload)</h4>
+  <div class="markdown level1 summary"><p>Makes a http PUT request to the given uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; PutAsync&lt;TPayload&gt;(string uri, TPayload payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The request uri.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TPayload</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td><p>The request payload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the request was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPayload</span></td>
+        <td><p>The payload type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient_SendAsync__1_System_Net_Http_HttpMethod_System_String___0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient.SendAsync%60%601(System.Net.Http.HttpMethod%2CSystem.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L216">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_AbstractClient_SendAsync_" data-uid="VPEAR.Core.Abstractions.AbstractClient.SendAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_AbstractClient_SendAsync__1_System_Net_Http_HttpMethod_System_String___0_" data-uid="VPEAR.Core.Abstractions.AbstractClient.SendAsync``1(System.Net.Http.HttpMethod,System.String,``0)">SendAsync&lt;TPayload&gt;(HttpMethod, String, TPayload)</h4>
+  <div class="markdown level1 summary"><p>Executes the http requests for the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; SendAsync&lt;TPayload&gt;(HttpMethod method, string uri, TPayload payload = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpMethod</span></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>The http method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>The request uri.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TPayload</span></td>
+        <td><span class="parametername">payload</span></td>
+        <td><p>The request payload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the request was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPayload</span></td>
+        <td><p>The payload type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_AbstractClient.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.AbstractClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/AbstractClient.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

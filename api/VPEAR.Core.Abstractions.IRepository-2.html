@@ -82,7 +82,8 @@ Implementation of the repository pattern.</p>
   <h5 id="VPEAR_Core_Abstractions_IRepository_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IRepository&lt;TEntity, in TKey&gt;
-    where TEntity : class where TKey : struct, IEquatable&lt;TKey&gt;</code></pre>
+
+    where TEntity : AbstractEntity&lt;TKey&gt; where TKey : struct, IEquatable&lt;TKey&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -112,7 +113,7 @@ Implementation of the repository pattern.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_CreateAsync__0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.CreateAsync(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L28">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L29">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IRepository_2_CreateAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.CreateAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IRepository_2_CreateAsync__0_" data-uid="VPEAR.Core.Abstractions.IRepository`2.CreateAsync(`0)">CreateAsync(TEntity)</h4>
@@ -121,7 +122,7 @@ Implementation of the repository pattern.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; CreateAsync(TEntity entity)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TEntity&gt; CreateAsync(TEntity entity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,8 +152,8 @@ Implementation of the repository pattern.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><p>The success of the operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td><p>The created entity.</p>
 </td>
       </tr>
     </tbody>
@@ -162,7 +163,7 @@ Implementation of the repository pattern.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_DeleteAsync__0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.DeleteAsync(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L35">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L36">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IRepository_2_DeleteAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.DeleteAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IRepository_2_DeleteAsync__0_" data-uid="VPEAR.Core.Abstractions.IRepository`2.DeleteAsync(`0)">DeleteAsync(TEntity)</h4>
@@ -171,7 +172,7 @@ Implementation of the repository pattern.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DeleteAsync(TEntity entity)</code></pre>
+    <pre><code class="lang-csharp hljs">Task DeleteAsync(TEntity entity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,8 +202,8 @@ Implementation of the repository pattern.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><p>The success of the operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
@@ -212,7 +213,7 @@ Implementation of the repository pattern.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_Get.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L42">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L43">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IRepository_2_Get_" data-uid="VPEAR.Core.Abstractions.IRepository`2.Get*"></a>
   <h4 id="VPEAR_Core_Abstractions_IRepository_2_Get" data-uid="VPEAR.Core.Abstractions.IRepository`2.Get">Get()</h4>
@@ -245,7 +246,7 @@ NOTE: Use this to make selects on the table.</p>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_GetAsync__1_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.GetAsync(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L49">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L50">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IRepository_2_GetAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IRepository_2_GetAsync__1_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetAsync(`1)">GetAsync(TKey)</h4>
@@ -292,10 +293,322 @@ NOTE: Use this to make selects on the table.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_GetCollection__1__0_System_Linq_Expressions_Expression_System_Func__0_System_Collections_Generic_IEnumerable___0____.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.GetCollection%60%601(%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L77">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_GetCollection_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetCollection*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_GetCollection__1__0_System_Linq_Expressions_Expression_System_Func__0_System_Collections_Generic_IEnumerable___0____" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetCollection``1(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})">GetCollection&lt;TProperty&gt;(TEntity, Expression&lt;Func&lt;TEntity, IEnumerable&lt;TProperty&gt;&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the collection from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetCollection&lt;TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEntity, IEnumerable&lt;TProperty&gt;&gt;&gt; expression)
+
+    where TProperty : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity to load from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TProperty&gt;&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The collection to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProperty</span></td>
+        <td><p>Type of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_GetCollectionAsync__1__0_System_Linq_Expressions_Expression_System_Func__0_System_Collections_Generic_IEnumerable___0____.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.GetCollectionAsync%60%601(%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L87">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_GetCollectionAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetCollectionAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_GetCollectionAsync__1__0_System_Linq_Expressions_Expression_System_Func__0_System_Collections_Generic_IEnumerable___0____" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetCollectionAsync``1(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})">GetCollectionAsync&lt;TProperty&gt;(TEntity, Expression&lt;Func&lt;TEntity, IEnumerable&lt;TProperty&gt;&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the collection asynchronous from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task GetCollectionAsync&lt;TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEntity, IEnumerable&lt;TProperty&gt;&gt;&gt; expression)
+
+    where TProperty : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity to load from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TProperty&gt;&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The collection to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProperty</span></td>
+        <td><p>Type of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_GetReference__1__0_System_Linq_Expressions_Expression_System_Func__0___0___.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.GetReference%60%601(%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2C%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L58">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_GetReference_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetReference*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_GetReference__1__0_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetReference``1(`0,System.Linq.Expressions.Expression{System.Func{`0,``0}})">GetReference&lt;TProperty&gt;(TEntity, Expression&lt;Func&lt;TEntity, TProperty&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the reference from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetReference&lt;TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEntity, TProperty&gt;&gt; expression)
+
+    where TProperty : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity to load from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, TProperty&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The reference to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProperty</span></td>
+        <td><p>Type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_GetReferenceAsync__1__0_System_Linq_Expressions_Expression_System_Func__0___0___.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.GetReferenceAsync%60%601(%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2C%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L68">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_GetReferenceAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetReferenceAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_GetReferenceAsync__1__0_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="VPEAR.Core.Abstractions.IRepository`2.GetReferenceAsync``1(`0,System.Linq.Expressions.Expression{System.Func{`0,``0}})">GetReferenceAsync&lt;TProperty&gt;(TEntity, Expression&lt;Func&lt;TEntity, TProperty&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the reference asynchronous from the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task GetReferenceAsync&lt;TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEntity, TProperty&gt;&gt; expression)
+
+    where TProperty : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity to load from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, TProperty&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>The reference to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProperty</span></td>
+        <td><p>Type of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_SaveChanges.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.SaveChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L93">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_SaveChanges_" data-uid="VPEAR.Core.Abstractions.IRepository`2.SaveChanges*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_SaveChanges" data-uid="VPEAR.Core.Abstractions.IRepository`2.SaveChanges">SaveChanges()</h4>
+  <div class="markdown level1 summary"><p>Save changes to the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveChanges()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_SaveChangesAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.SaveChangesAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L99">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Abstractions_IRepository_2_SaveChangesAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.SaveChangesAsync*"></a>
+  <h4 id="VPEAR_Core_Abstractions_IRepository_2_SaveChangesAsync" data-uid="VPEAR.Core.Abstractions.IRepository`2.SaveChangesAsync">SaveChangesAsync()</h4>
+  <div class="markdown level1 summary"><p>Save changes asynchronous to the database.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SaveChangesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>An awaitable task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2_UpdateAsync__0_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602.UpdateAsync(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L56">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L106">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IRepository_2_UpdateAsync_" data-uid="VPEAR.Core.Abstractions.IRepository`2.UpdateAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IRepository_2_UpdateAsync__0_" data-uid="VPEAR.Core.Abstractions.IRepository`2.UpdateAsync(`0)">UpdateAsync(TEntity)</h4>
@@ -304,7 +617,7 @@ NOTE: Use this to make selects on the table.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; UpdateAsync(TEntity entity)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;TEntity&gt; UpdateAsync(TEntity entity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -334,15 +647,18 @@ NOTE: Use this to make selects on the table.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><p>The success of the operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td><p>The updated entity.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -355,7 +671,7 @@ NOTE: Use this to make selects on the table.</p>
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IRepository_2.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IRepository%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IRepository.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

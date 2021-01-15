@@ -77,21 +77,32 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="VPEAR.Core.AbstractClient.html">AbstractClient</a></h4>
-      <section></section>
       <h4><a class="xref" href="VPEAR.Core.DeviceClient.html">DeviceClient</a></h4>
-      <section><p>Implements the <a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.html">IDeviceClient</a> interface.</p>
+      <section><p>Implements the <a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.html">IDeviceClient</a> interface.
+This client gives access to a sensor device.
+NOTE: This class is only for the vpear server to connect to devices.</p>
 </section>
-      <h4><a class="xref" href="VPEAR.Core.Extensions.html">Extensions</a></h4>
-      <section></section>
       <h4><a class="xref" href="VPEAR.Core.Null.html">Null</a></h4>
       <section><p>Dummy class for the <a class="xref" href="VPEAR.Core.Result-1.html">Result&lt;TSuccess&gt;</a> success or error type.
 NEVER instantiate this class, it will throw an <span class="xref">System.InvalidOperationException</span>.</p>
 </section>
       <h4><a class="xref" href="VPEAR.Core.Result-1.html">Result&lt;TSuccess&gt;</a></h4>
-      <section></section>
+      <section><p>Wrapper for a service result.</p>
+</section>
       <h4><a class="xref" href="VPEAR.Core.VPEARClient.html">VPEARClient</a></h4>
-      <section></section>
+      <section><p>This class implements <a class="xref" href="VPEAR.Core.Abstractions.IVPEARClient.html">IVPEARClient</a> interface and should
+provide and sdk like experience for communication with the vpear server.
+You can use via dependency injection with the interface or directly
+instantiate a vpear client.
+NOTE: If you use it with dependency injection register the client as singleton.</p>
+<p>
+USAGE:
+Before you use anything from the client, use the login method to get an
+authorization token and the rest will be handled by the client.
+NOTE: If you are not registered already use the register method, but
+it will take some time, because the admin has to verify the registration.
+</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a></h4>
@@ -100,7 +111,15 @@ NEVER instantiate this class, it will throw an <span class="xref">System.Invalid
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="VPEAR.Core.DeviceClient.Factory.html">DeviceClient.Factory</a></h4>
-      <section></section>
+      <section><p>Autofac create a factory method with this delegate, because
+the baseAddress argument isn't known during resolution time
+and will be later provided.</p>
+</section>
+      <h4><a class="xref" href="VPEAR.Core.VPEARClient.Factory.html">VPEARClient.Factory</a></h4>
+      <section><p>Autofac create a factory method with this delegate, because
+the baseAddress argument isn't known during resolution time
+and will be later provided.</p>
+</section>
 </article>
           </div>
           

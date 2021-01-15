@@ -752,22 +752,21 @@ public class DeviceController : Controller, IActionFilter, IAsyncActionFilter, I
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnDeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L120">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L114">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnDeleteAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_System_Guid_" data-uid="VPEAR.Server.Controllers.DeviceController.OnDeleteAsync(System.Guid)">OnDeleteAsync(Guid)</h4>
-  <div class="markdown level1 summary"><p>The admin can delete a device.</p>
+  <div class="markdown level1 summary"><p>Deletes the given device.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpDelete]
-[Authorize(Roles = &quot;admin&quot;)]
-[SwaggerResponse(200, &quot;Device was deleted.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;Device was deleted.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Device not found.&quot;, typeof(ErrorResponse))]
-[SwaggerResponse(409, &quot;Device is currently recording.&quot;, typeof(ErrorResponse))]
+[SwaggerResponse(409, &quot;Device is archived or recording.&quot;, typeof(ErrorResponse))]
 public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] Guid id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -806,13 +805,13 @@ public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] Guid id)</c
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnGetAsync_VPEAR_Core_DeviceStatus_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnGetAsync(VPEAR.Core.DeviceStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnGetAsync_System_Nullable_VPEAR_Core_DeviceStatus__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnGetAsync(System.Nullable%7BVPEAR.Core.DeviceStatus%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L51">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnGetAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnGetAsync*"></a>
-  <h4 id="VPEAR_Server_Controllers_DeviceController_OnGetAsync_VPEAR_Core_DeviceStatus_" data-uid="VPEAR.Server.Controllers.DeviceController.OnGetAsync(VPEAR.Core.DeviceStatus)">OnGetAsync(DeviceStatus)</h4>
+  <h4 id="VPEAR_Server_Controllers_DeviceController_OnGetAsync_System_Nullable_VPEAR_Core_DeviceStatus__" data-uid="VPEAR.Server.Controllers.DeviceController.OnGetAsync(System.Nullable{VPEAR.Core.DeviceStatus})">OnGetAsync(Nullable&lt;DeviceStatus&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets the device information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -823,7 +822,7 @@ public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] Guid id)</c
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
-public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] DeviceStatus status)</code></pre>
+public Task&lt;IActionResult&gt; OnGetAsync([FromQuery] DeviceStatus? status)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -836,7 +835,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] DeviceStatus s
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a></td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a>&gt;</td>
         <td><span class="parametername">status</span></td>
         <td><p>The device status.</p>
 </td>
@@ -864,7 +863,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] DeviceStatus s
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnPostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnPostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L102">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L98">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnPostAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPostAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnPostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)">OnPostAsync(PostDeviceRequest)</h4>
@@ -921,7 +920,7 @@ public Task&lt;IActionResult&gt; OnPostAsync([FromBody, Required] PostDeviceRequ
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnPutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnPutAsync(System.Guid%2CVPEAR.Core.Wrappers.PutDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L76">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/DeviceController.cs/#L74">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnPutAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPutAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnPutAsync_System_Guid_VPEAR_Core_Wrappers_PutDeviceRequest_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPutAsync(System.Guid,VPEAR.Core.Wrappers.PutDeviceRequest)">OnPutAsync(Guid, PutDeviceRequest)</h4>
@@ -931,7 +930,7 @@ public Task&lt;IActionResult&gt; OnPostAsync([FromBody, Required] PostDeviceRequ
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPut]
-[SwaggerResponse(200, &quot;Changes were saved to db and device.&quot;, typeof(Null))]
+[SwaggerResponse(204, &quot;Changes were saved to db and device.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
@@ -997,7 +996,10 @@ public Task&lt;IActionResult&gt; OnPutAsync([FromQuery, Required] Guid id, [From
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>

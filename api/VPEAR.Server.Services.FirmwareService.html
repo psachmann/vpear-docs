@@ -119,19 +119,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_FirmwareService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Device_System_Guid__VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Firmware_System_Guid__VPEAR_Core_Abstractions_IDeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.FirmwareService.%23ctor(VPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Models.Device%2CSystem.Guid%7D%2CVPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Models.Firmware%2CSystem.Guid%7D%2CVPEAR.Core.Abstractions.IDeviceClient.Factory%2CMicrosoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.FirmwareController%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_FirmwareService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__VPEAR_Core_DeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.FirmwareService.%23ctor(VPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Entities.Device%2CSystem.Guid%7D%2CVPEAR.Core.DeviceClient.Factory%2CMicrosoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.FirmwareController%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L38">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L34">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_FirmwareService__ctor_" data-uid="VPEAR.Server.Services.FirmwareService.#ctor*"></a>
-  <h4 id="VPEAR_Server_Services_FirmwareService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Device_System_Guid__VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Models_Firmware_System_Guid__VPEAR_Core_Abstractions_IDeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__" data-uid="VPEAR.Server.Services.FirmwareService.#ctor(VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Models.Device,System.Guid},VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Models.Firmware,System.Guid},VPEAR.Core.Abstractions.IDeviceClient.Factory,Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.FirmwareController})">FirmwareService(IRepository&lt;Device, Guid&gt;, IRepository&lt;Firmware, Guid&gt;, IDeviceClient.Factory, ILogger&lt;FirmwareController&gt;)</h4>
+  <h4 id="VPEAR_Server_Services_FirmwareService__ctor_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__VPEAR_Core_DeviceClient_Factory_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__" data-uid="VPEAR.Server.Services.FirmwareService.#ctor(VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Entities.Device,System.Guid},VPEAR.Core.DeviceClient.Factory,Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.FirmwareController})">FirmwareService(IRepository&lt;Device, Guid&gt;, DeviceClient.Factory, ILogger&lt;FirmwareController&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Server.Services.FirmwareService.html">FirmwareService</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FirmwareService(IRepository&lt;Device, Guid&gt; devices, IRepository&lt;Firmware, Guid&gt; firmwares, IDeviceClient.Factory factory, ILogger&lt;FirmwareController&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public FirmwareService(IRepository&lt;Device, Guid&gt; devices, DeviceClient.Factory factory, ILogger&lt;FirmwareController&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,19 +144,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Models.Device.html">Device</a>, <span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Entities.Device.html">Device</a>, <span class="xref">System.Guid</span>&gt;</td>
         <td><span class="parametername">devices</span></td>
         <td><p>The device repository for db access.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Models.Firmware.html">Firmware</a>, <span class="xref">System.Guid</span>&gt;</td>
-        <td><span class="parametername">firmwares</span></td>
-        <td><p>The firmware repository for db access.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.Factory.html">IDeviceClient.Factory</a></td>
+        <td><a class="xref" href="VPEAR.Core.DeviceClient.Factory.html">DeviceClient.Factory</a></td>
         <td><span class="parametername">factory</span></td>
         <td><p>The factory to create a device client.</p>
 </td>
@@ -176,12 +170,11 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_FirmwareService_GetAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.FirmwareService.GetAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L51">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L45">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_FirmwareService_GetAsync_" data-uid="VPEAR.Server.Services.FirmwareService.GetAsync*"></a>
   <h4 id="VPEAR_Server_Services_FirmwareService_GetAsync_System_Guid_" data-uid="VPEAR.Server.Services.FirmwareService.GetAsync(System.Guid)">GetAsync(Guid)</h4>
-  <div class="markdown level1 summary"><p>Gets the device firmware information.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,8 +193,7 @@
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td><p>The device id.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -216,8 +208,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetFirmwareResponse.html">GetFirmwareResponse</a>&gt;&gt;</td>
-        <td><p>Http status code and device firmware information.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -226,12 +217,11 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_FirmwareService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutFirmwareRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.FirmwareService.PutAsync(System.Guid%2CVPEAR.Core.Wrappers.PutFirmwareRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L78">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L89">View Source</a>
   </span>
   <a id="VPEAR_Server_Services_FirmwareService_PutAsync_" data-uid="VPEAR.Server.Services.FirmwareService.PutAsync*"></a>
   <h4 id="VPEAR_Server_Services_FirmwareService_PutAsync_System_Guid_VPEAR_Core_Wrappers_PutFirmwareRequest_" data-uid="VPEAR.Server.Services.FirmwareService.PutAsync(System.Guid,VPEAR.Core.Wrappers.PutFirmwareRequest)">PutAsync(Guid, PutFirmwareRequest)</h4>
-  <div class="markdown level1 summary"><p>Updates the device firmware information.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,14 +240,12 @@
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td><p>The device id.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="VPEAR.Core.Wrappers.PutFirmwareRequest.html">PutFirmwareRequest</a></td>
         <td><span class="parametername">request</span></td>
-        <td><p>The request data.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -272,8 +260,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Null.html">Null</a>&gt;&gt;</td>
-        <td><p>Http status code.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -283,7 +270,10 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -296,7 +286,7 @@
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Services_FirmwareService.md&amp;value=---%0Auid%3A%20VPEAR.Server.Services.FirmwareService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Services/FirmwareService.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -73,13 +73,16 @@
   
   <h1 id="VPEAR_Core_DeviceClient" data-uid="VPEAR.Core.DeviceClient" class="text-break">Class DeviceClient
   </h1>
-  <div class="markdown level0 summary"><p>Implements the <a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.html">IDeviceClient</a> interface.</p>
+  <div class="markdown level0 summary"><p>Implements the <a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.html">IDeviceClient</a> interface.
+This client gives access to a sensor device.
+NOTE: This class is only for the vpear server to connect to devices.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DeviceClient</span></div>
+    <div class="level1"><a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html">AbstractClient</a></div>
+    <div class="level2"><span class="xref">DeviceClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -88,6 +91,39 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_Error">AbstractClient.Error</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_Response">AbstractClient.Response</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_BaseAddress">AbstractClient.BaseAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_Client">AbstractClient.Client</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_Dispose">AbstractClient.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_IsSuccessResponse">AbstractClient.IsSuccessResponse()</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_DeleteAsync_System_String_">AbstractClient.DeleteAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_GetAsync_System_String_">AbstractClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_PostAsync__1_System_String___0_">AbstractClient.PostAsync&lt;TPayload&gt;(String, TPayload)</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_PutAsync__1_System_String___0_">AbstractClient.PutAsync&lt;TPayload&gt;(String, TPayload)</a>
+    </div>
+    <div>
+      <a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_SendAsync__1_System_Net_Http_HttpMethod_System_String___0_">AbstractClient.SendAsync&lt;TPayload&gt;(HttpMethod, String, TPayload)</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -114,25 +150,25 @@
   <h6><strong>Assembly</strong>: VPEAR.Core.dll</h6>
   <h5 id="VPEAR_Core_DeviceClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DeviceClient : IDeviceClient, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class DeviceClient : AbstractClient, IDeviceClient, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient__ctor_System_String_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient__ctor_System_String_System_Net_Http_IHttpClientFactory_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.%23ctor(System.String%2CSystem.Net.Http.IHttpClientFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L31">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L33">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient__ctor_" data-uid="VPEAR.Core.DeviceClient.#ctor*"></a>
-  <h4 id="VPEAR_Core_DeviceClient__ctor_System_String_" data-uid="VPEAR.Core.DeviceClient.#ctor(System.String)">DeviceClient(String)</h4>
+  <h4 id="VPEAR_Core_DeviceClient__ctor_System_String_System_Net_Http_IHttpClientFactory_" data-uid="VPEAR.Core.DeviceClient.#ctor(System.String,System.Net.Http.IHttpClientFactory)">DeviceClient(String, IHttpClientFactory)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VPEAR.Core.DeviceClient.html">DeviceClient</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DeviceClient(string baseAddess)</code></pre>
+    <pre><code class="lang-csharp hljs">public DeviceClient(string baseAddress, IHttpClientFactory factory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,71 +182,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">baseAddess</span></td>
-        <td><p>The base url for the client to connect to.</p>
+        <td><span class="parametername">baseAddress</span></td>
+        <td><p>The base address to connect to.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_BaseAddress.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.BaseAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L42">View Source</a>
-  </span>
-  <a id="VPEAR_Core_DeviceClient_BaseAddress_" data-uid="VPEAR.Core.DeviceClient.BaseAddress*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_BaseAddress" data-uid="VPEAR.Core.DeviceClient.BaseAddress">BaseAddress</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string BaseAddress { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_ResponseStatusCode.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.ResponseStatusCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L48">View Source</a>
-  </span>
-  <a id="VPEAR_Core_DeviceClient_ResponseStatusCode_" data-uid="VPEAR.Core.DeviceClient.ResponseStatusCode*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_ResponseStatusCode" data-uid="VPEAR.Core.DeviceClient.ResponseStatusCode">ResponseStatusCode</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpStatusCode ResponseStatusCode { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.HttpStatusCode</span></td>
-        <td></td>
+        <td><span class="xref">System.Net.Http.IHttpClientFactory</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>The http client factory.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,25 +198,42 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_Dispose.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_CanConnectAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.CanConnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L68">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L58">View Source</a>
   </span>
-  <a id="VPEAR_Core_DeviceClient_Dispose_" data-uid="VPEAR.Core.DeviceClient.Dispose*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_Dispose" data-uid="VPEAR.Core.DeviceClient.Dispose">Dispose()</h4>
+  <a id="VPEAR_Core_DeviceClient_CanConnectAsync_" data-uid="VPEAR.Core.DeviceClient.CanConnectAsync*"></a>
+  <h4 id="VPEAR_Core_DeviceClient_CanConnectAsync" data-uid="VPEAR.Core.DeviceClient.CanConnectAsync">CanConnectAsync()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; CanConnectAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VPEAR.Core.Abstractions.AbstractClient.html#VPEAR_Core_Abstractions_AbstractClient_CanConnectAsync">AbstractClient.CanConnectAsync()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L73">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L66">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetAsync_" data-uid="VPEAR.Core.DeviceClient.GetAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetAsync" data-uid="VPEAR.Core.DeviceClient.GetAsync">GetAsync()</h4>
@@ -266,7 +263,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetDeviceAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetDeviceAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L79">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L83">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetDeviceAsync_" data-uid="VPEAR.Core.DeviceClient.GetDeviceAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetDeviceAsync" data-uid="VPEAR.Core.DeviceClient.GetDeviceAsync">GetDeviceAsync()</h4>
@@ -296,7 +293,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetFiltersAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetFiltersAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L90">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L199">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetFiltersAsync_" data-uid="VPEAR.Core.DeviceClient.GetFiltersAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetFiltersAsync" data-uid="VPEAR.Core.DeviceClient.GetFiltersAsync">GetFiltersAsync()</h4>
@@ -304,7 +301,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetFiltersResponse&gt; GetFiltersAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;FiltersResponse&gt; GetFiltersAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -316,7 +313,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetFiltersResponse.html">GetFiltersResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.FiltersResponse.html">FiltersResponse</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -326,7 +323,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetFirmwareAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetFirmwareAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L101">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L330">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetFirmwareAsync_" data-uid="VPEAR.Core.DeviceClient.GetFirmwareAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetFirmwareAsync" data-uid="VPEAR.Core.DeviceClient.GetFirmwareAsync">GetFirmwareAsync()</h4>
@@ -334,7 +331,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetFirmwareResponse&gt; GetFirmwareAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;FirmwareResponse&gt; GetFirmwareAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -346,7 +343,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetFirmwareResponse.html">GetFirmwareResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.FirmwareResponse.html">FirmwareResponse</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -356,7 +353,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetFramesAsync_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetFramesAsync(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L121">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L117">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetFramesAsync_" data-uid="VPEAR.Core.DeviceClient.GetFramesAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetFramesAsync_System_Nullable_System_Int32__" data-uid="VPEAR.Core.DeviceClient.GetFramesAsync(System.Nullable{System.Int32})">GetFramesAsync(Nullable&lt;Int32&gt;)</h4>
@@ -403,7 +400,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetFrequencyAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetFrequencyAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L136">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L139">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetFrequencyAsync_" data-uid="VPEAR.Core.DeviceClient.GetFrequencyAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetFrequencyAsync" data-uid="VPEAR.Core.DeviceClient.GetFrequencyAsync">GetFrequencyAsync()</h4>
@@ -433,7 +430,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetPowerAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetPowerAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L154">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L241">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetPowerAsync_" data-uid="VPEAR.Core.DeviceClient.GetPowerAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetPowerAsync" data-uid="VPEAR.Core.DeviceClient.GetPowerAsync">GetPowerAsync()</h4>
@@ -441,7 +438,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetPowerResponse&gt; GetPowerAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;PowerResponse&gt; GetPowerAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -453,7 +450,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetPowerResponse.html">GetPowerResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.PowerResponse.html">PowerResponse</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -463,7 +460,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetRequiredSensorsAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetRequiredSensorsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L165">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L169">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetRequiredSensorsAsync_" data-uid="VPEAR.Core.DeviceClient.GetRequiredSensorsAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetRequiredSensorsAsync" data-uid="VPEAR.Core.DeviceClient.GetRequiredSensorsAsync">GetRequiredSensorsAsync()</h4>
@@ -493,7 +490,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetSensorsAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetSensorsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L183">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L100">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetSensorsAsync_" data-uid="VPEAR.Core.DeviceClient.GetSensorsAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetSensorsAsync" data-uid="VPEAR.Core.DeviceClient.GetSensorsAsync">GetSensorsAsync()</h4>
@@ -501,7 +498,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetSensorResponse&gt; GetSensorsAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IList&lt;SensorResponse&gt;&gt; GetSensorsAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -513,37 +510,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetSensorResponse.html">GetSensorResponse</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetSSEAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetSSEAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L194">View Source</a>
-  </span>
-  <a id="VPEAR_Core_DeviceClient_GetSSEAsync_" data-uid="VPEAR.Core.DeviceClient.GetSSEAsync*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_GetSSEAsync" data-uid="VPEAR.Core.DeviceClient.GetSSEAsync">GetSSEAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;dynamic&gt; GetSSEAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.SensorResponse.html">SensorResponse</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -553,7 +520,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetTimeAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetTimeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L200">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L258">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetTimeAsync_" data-uid="VPEAR.Core.DeviceClient.GetTimeAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetTimeAsync" data-uid="VPEAR.Core.DeviceClient.GetTimeAsync">GetTimeAsync()</h4>
@@ -583,7 +550,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_GetWifiAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.GetWifiAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L221">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L283">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_GetWifiAsync_" data-uid="VPEAR.Core.DeviceClient.GetWifiAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_GetWifiAsync" data-uid="VPEAR.Core.DeviceClient.GetWifiAsync">GetWifiAsync()</h4>
@@ -591,7 +558,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;GetWifiResponse&gt; GetWifiAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;WifiResponse&gt; GetWifiAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -603,26 +570,53 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetWifiResponse.html">GetWifiResponse</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Wrappers.WifiResponse.html">WifiResponse</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_IsReachableAsync.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.IsReachableAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutFiltersAsync_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutFiltersAsync(System.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L53">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L216">View Source</a>
   </span>
-  <a id="VPEAR_Core_DeviceClient_IsReachableAsync_" data-uid="VPEAR.Core.DeviceClient.IsReachableAsync*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_IsReachableAsync" data-uid="VPEAR.Core.DeviceClient.IsReachableAsync">IsReachableAsync()</h4>
+  <a id="VPEAR_Core_DeviceClient_PutFiltersAsync_" data-uid="VPEAR.Core.DeviceClient.PutFiltersAsync*"></a>
+  <h4 id="VPEAR_Core_DeviceClient_PutFiltersAsync_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_System_Boolean__" data-uid="VPEAR.Core.DeviceClient.PutFiltersAsync(System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})">PutFiltersAsync(Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsReachableAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutFiltersAsync(bool? spot, bool? smooth, bool? noise)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">spot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">smooth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">noise</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -640,67 +634,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutFiltersAsync_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutFiltersAsync(System.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L232">View Source</a>
-  </span>
-  <a id="VPEAR_Core_DeviceClient_PutFiltersAsync_" data-uid="VPEAR.Core.DeviceClient.PutFiltersAsync*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_PutFiltersAsync_System_Boolean_System_Boolean_System_Boolean_" data-uid="VPEAR.Core.DeviceClient.PutFiltersAsync(System.Boolean,System.Boolean,System.Boolean)">PutFiltersAsync(Boolean, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PutFiltersAsync(bool spot, bool smooth, bool noise)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">spot</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">smooth</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">noise</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutFirmwareAsync_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutFirmwareAsync(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L242">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L347">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_PutFirmwareAsync_" data-uid="VPEAR.Core.DeviceClient.PutFirmwareAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_PutFirmwareAsync_System_String_System_String_System_Boolean_" data-uid="VPEAR.Core.DeviceClient.PutFirmwareAsync(System.String,System.String,System.Boolean)">PutFirmwareAsync(String, String, Boolean)</h4>
@@ -708,7 +645,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PutFirmwareAsync(string source, string upgrade, bool package = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutFirmwareAsync(string source = null, string upgrade = null, bool package = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -747,25 +684,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutFrequencyAsync_System_Int32_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutFrequencyAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutFrequencyAsync_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutFrequencyAsync(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L268">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L156">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_PutFrequencyAsync_" data-uid="VPEAR.Core.DeviceClient.PutFrequencyAsync*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_PutFrequencyAsync_System_Int32_" data-uid="VPEAR.Core.DeviceClient.PutFrequencyAsync(System.Int32)">PutFrequencyAsync(Int32)</h4>
+  <h4 id="VPEAR_Core_DeviceClient_PutFrequencyAsync_System_Nullable_System_Int32__" data-uid="VPEAR.Core.DeviceClient.PutFrequencyAsync(System.Nullable{System.Int32})">PutFrequencyAsync(Nullable&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PutFrequencyAsync(int frequency)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutFrequencyAsync(int? frequency)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -778,7 +715,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">frequency</span></td>
         <td></td>
       </tr>
@@ -794,25 +731,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutRequiredSensorsAsync_System_Int32_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutRequiredSensorsAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutRequiredSensorsAsync_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutRequiredSensorsAsync(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L276">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L186">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_PutRequiredSensorsAsync_" data-uid="VPEAR.Core.DeviceClient.PutRequiredSensorsAsync*"></a>
-  <h4 id="VPEAR_Core_DeviceClient_PutRequiredSensorsAsync_System_Int32_" data-uid="VPEAR.Core.DeviceClient.PutRequiredSensorsAsync(System.Int32)">PutRequiredSensorsAsync(Int32)</h4>
+  <h4 id="VPEAR_Core_DeviceClient_PutRequiredSensorsAsync_System_Nullable_System_Int32__" data-uid="VPEAR.Core.DeviceClient.PutRequiredSensorsAsync(System.Nullable{System.Int32})">PutRequiredSensorsAsync(Nullable&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PutRequiredSensorsAsync(int requiredSensors)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutRequiredSensorsAsync(int? requiredSensors)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -825,7 +762,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">requiredSensors</span></td>
         <td></td>
       </tr>
@@ -841,7 +778,54 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutTimeAsync_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutTimeAsync(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L275">View Source</a>
+  </span>
+  <a id="VPEAR_Core_DeviceClient_PutTimeAsync_" data-uid="VPEAR.Core.DeviceClient.PutTimeAsync*"></a>
+  <h4 id="VPEAR_Core_DeviceClient_PutTimeAsync_System_DateTimeOffset_" data-uid="VPEAR.Core.DeviceClient.PutTimeAsync(System.DateTimeOffset)">PutTimeAsync(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutTimeAsync(DateTimeOffset time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -851,7 +835,7 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_PutWifiAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.PutWifiAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L284">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L300">View Source</a>
   </span>
   <a id="VPEAR_Core_DeviceClient_PutWifiAsync_" data-uid="VPEAR.Core.DeviceClient.PutWifiAsync*"></a>
   <h4 id="VPEAR_Core_DeviceClient_PutWifiAsync_System_String_System_String_System_String_" data-uid="VPEAR.Core.DeviceClient.PutWifiAsync(System.String,System.String,System.String)">PutWifiAsync(String, String, String)</h4>
@@ -859,7 +843,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PutWifiAsync(string ssid, string password, string mode = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; PutWifiAsync(string ssid, string password = null, string mode = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -898,7 +882,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient_SyncAsync_VPEAR_Core_Entities_Device_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient.SyncAsync(VPEAR.Core.Entities.Device%2CVPEAR.Core.Abstractions.IRepository%7BVPEAR.Core.Entities.Device%2CSystem.Guid%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L372">View Source</a>
+  </span>
+  <a id="VPEAR_Core_DeviceClient_SyncAsync_" data-uid="VPEAR.Core.DeviceClient.SyncAsync*"></a>
+  <h4 id="VPEAR_Core_DeviceClient_SyncAsync_VPEAR_Core_Entities_Device_VPEAR_Core_Abstractions_IRepository_VPEAR_Core_Entities_Device_System_Guid__" data-uid="VPEAR.Core.DeviceClient.SyncAsync(VPEAR.Core.Entities.Device,VPEAR.Core.Abstractions.IRepository{VPEAR.Core.Entities.Device,System.Guid})">SyncAsync(Device, IRepository&lt;Device, Guid&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; SyncAsync(Device device, IRepository&lt;Device, Guid&gt; devices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VPEAR.Core.Entities.Device.html">Device</a></td>
+        <td><span class="parametername">device</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VPEAR.Core.Abstractions.IRepository-2.html">IRepository</a>&lt;<a class="xref" href="VPEAR.Core.Entities.Device.html">Device</a>, <span class="xref">System.Guid</span>&gt;</td>
+        <td><span class="parametername">devices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -912,7 +948,10 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -925,7 +964,7 @@
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_DeviceClient.md&amp;value=---%0Auid%3A%20VPEAR.Core.DeviceClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/DeviceClient.cs/#L23" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

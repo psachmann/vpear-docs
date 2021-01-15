@@ -73,7 +73,8 @@
   
   <h1 id="VPEAR_Core_Abstractions_IDiscoveryService" data-uid="VPEAR.Core.Abstractions.IDiscoveryService" class="text-break">Interface IDiscoveryService
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Discovers devices for the server.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VPEAR.Core.Abstractions.html">VPEAR.Core.Abstractions</a></h6>
   <h6><strong>Assembly</strong>: VPEAR.Core.dll</h6>
@@ -88,11 +89,12 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDiscoveryService_SearchDevicesAsync_System_Net_IPAddress_System_Net_IPAddress_.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDiscoveryService.SearchDevicesAsync(System.Net.IPAddress%2CSystem.Net.IPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDiscoveryService.cs/#L13">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDiscoveryService.cs/#L22">View Source</a>
   </span>
   <a id="VPEAR_Core_Abstractions_IDiscoveryService_SearchDevicesAsync_" data-uid="VPEAR.Core.Abstractions.IDiscoveryService.SearchDevicesAsync*"></a>
   <h4 id="VPEAR_Core_Abstractions_IDiscoveryService_SearchDevicesAsync_System_Net_IPAddress_System_Net_IPAddress_" data-uid="VPEAR.Core.Abstractions.IDiscoveryService.SearchDevicesAsync(System.Net.IPAddress,System.Net.IPAddress)">SearchDevicesAsync(IPAddress, IPAddress)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Searches for devices in the given subnet.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,12 +113,14 @@
       <tr>
         <td><span class="xref">System.Net.IPAddress</span></td>
         <td><span class="parametername">address</span></td>
-        <td></td>
+        <td><p>An address from the subnet to search in.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Net.IPAddress</span></td>
         <td><span class="parametername">subnetMask</span></td>
-        <td></td>
+        <td><p>The subnet mask from the subnet to search in.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,13 +135,17 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>An asynchronous task.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -150,7 +158,7 @@
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Abstractions_IDiscoveryService.md&amp;value=---%0Auid%3A%20VPEAR.Core.Abstractions.IDiscoveryService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDiscoveryService.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Abstractions/IDiscoveryService.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

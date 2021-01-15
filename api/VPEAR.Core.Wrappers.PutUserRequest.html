@@ -118,16 +118,17 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutUserRequest_IsVerified.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutUserRequest.IsVerified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L22">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L33">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutUserRequest_IsVerified_" data-uid="VPEAR.Core.Wrappers.PutUserRequest.IsVerified*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutUserRequest_IsVerified" data-uid="VPEAR.Core.Wrappers.PutUserRequest.IsVerified">IsVerified</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the user is verified or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;is_verified&quot;)]
-public bool IsVerified { get; set; }</code></pre>
+public bool? IsVerified { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,8 +140,9 @@ public bool IsVerified { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>Indicates whether the user is verified or not.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -149,11 +151,12 @@ public bool IsVerified { get; set; }</code></pre>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutUserRequest_NewPassword.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutUserRequest.NewPassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L19">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L26">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutUserRequest_NewPassword_" data-uid="VPEAR.Core.Wrappers.PutUserRequest.NewPassword*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutUserRequest_NewPassword" data-uid="VPEAR.Core.Wrappers.PutUserRequest.NewPassword">NewPassword</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the new password.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,7 +174,8 @@ public string NewPassword { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The new user password.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -180,11 +184,12 @@ public string NewPassword { get; set; }</code></pre>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutUserRequest_OldPassword.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutUserRequest.OldPassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L16">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L19">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutUserRequest_OldPassword_" data-uid="VPEAR.Core.Wrappers.PutUserRequest.OldPassword*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutUserRequest_OldPassword" data-uid="VPEAR.Core.Wrappers.PutUserRequest.OldPassword">OldPassword</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the old password.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,13 +207,17 @@ public string OldPassword { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The old user password.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
@@ -221,7 +230,7 @@ public string OldPassword { get; set; }</code></pre>
                     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutUserRequest.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutUserRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutUserRequest.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

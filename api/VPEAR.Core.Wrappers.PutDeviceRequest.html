@@ -118,11 +118,12 @@
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutDeviceRequest_DisplayName.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutDeviceRequest.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L15">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L19">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutDeviceRequest_DisplayName_" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.DisplayName*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutDeviceRequest_DisplayName" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.DisplayName">DisplayName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the display name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -140,7 +141,8 @@ public string DisplayName { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The new device display name.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -149,16 +151,17 @@ public string DisplayName { get; set; }</code></pre>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutDeviceRequest_Frequency.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutDeviceRequest.Frequency%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L18">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L26">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutDeviceRequest_Frequency_" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.Frequency*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutDeviceRequest_Frequency" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.Frequency">Frequency</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the frequency.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;frequency&quot;)]
-public uint? Frequency { get; set; }</code></pre>
+public int? Frequency { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,8 +173,9 @@ public uint? Frequency { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The new device scanning frequency.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -180,16 +184,17 @@ public uint? Frequency { get; set; }</code></pre>
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutDeviceRequest_RequiredSensors.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutDeviceRequest.RequiredSensors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L21">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L33">View Source</a>
   </span>
   <a id="VPEAR_Core_Wrappers_PutDeviceRequest_RequiredSensors_" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.RequiredSensors*"></a>
   <h4 id="VPEAR_Core_Wrappers_PutDeviceRequest_RequiredSensors" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.RequiredSensors">RequiredSensors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the required sensors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;required_sensors&quot;)]
-public uint? RequiredSensors { get; set; }</code></pre>
+public int? RequiredSensors { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,14 +206,52 @@ public uint? RequiredSensors { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Indicates how many sensors are required for the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Core_Wrappers_PutDeviceRequest_Status.md&amp;value=---%0Auid%3A%20VPEAR.Core.Wrappers.PutDeviceRequest.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Core/Wrappers/PutDeviceRequest.cs/#L40">View Source</a>
+  </span>
+  <a id="VPEAR_Core_Wrappers_PutDeviceRequest_Status_" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.Status*"></a>
+  <h4 id="VPEAR_Core_Wrappers_PutDeviceRequest_Status" data-uid="VPEAR.Core.Wrappers.PutDeviceRequest.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;status&quot;)]
+[JsonConverter(typeof(JsonStringEnumConverter))]
+public DeviceStatus? Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a>&gt;</td>
+        <td><p>The new device status.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>

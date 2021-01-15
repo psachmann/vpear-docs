@@ -750,7 +750,7 @@ public class SensorController : Controller, IActionFilter, IAsyncActionFilter, I
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_SensorController_OnGetFramesAsync_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.SensorController.OnGetFramesAsync(System.Guid%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/SensorController.cs/#L71">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/SensorController.cs/#L49">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_SensorController_OnGetFramesAsync_" data-uid="VPEAR.Server.Controllers.SensorController.OnGetFramesAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_SensorController_OnGetFramesAsync_System_Guid_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="VPEAR.Server.Controllers.SensorController.OnGetFramesAsync(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Int32})">OnGetFramesAsync(Guid, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
@@ -767,7 +767,7 @@ public class SensorController : Controller, IActionFilter, IAsyncActionFilter, I
 [SwaggerResponse(400, &quot;Wrong request format or start is greater or equals stop.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
-public Task&lt;IActionResult&gt; OnGetFramesAsync([FromQuery, Required] Guid id, [FromQuery] int? start, [FromQuery] int? stop)</code></pre>
+public Task&lt;IActionResult&gt; OnGetFramesAsync([FromQuery, Required] Guid id, [FromQuery] int? start, [FromQuery] int? count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -793,8 +793,8 @@ public Task&lt;IActionResult&gt; OnGetFramesAsync([FromQuery, Required] Guid id,
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">stop</span></td>
-        <td><p>The exclusive stop frame. If omitted, the last recorded frame will be assumed.</p>
+        <td><span class="parametername">count</span></td>
+        <td><p>The count how many frames from start. If omitted, all frames from start till end will be assumed.</p>
 </td>
       </tr>
     </tbody>
@@ -820,7 +820,7 @@ public Task&lt;IActionResult&gt; OnGetFramesAsync([FromQuery, Required] Guid id,
     <a href="https://github.com/psachmann/vpear/new/master/apiSpec/new?filename=VPEAR_Server_Controllers_SensorController_OnGetSensorsAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.SensorController.OnGetSensorsAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/SensorController.cs/#L47">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/master/src/VPEAR.Server/Controllers/SensorController.cs/#L74">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_SensorController_OnGetSensorsAsync_" data-uid="VPEAR.Server.Controllers.SensorController.OnGetSensorsAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_SensorController_OnGetSensorsAsync_System_Guid_" data-uid="VPEAR.Server.Controllers.SensorController.OnGetSensorsAsync(System.Guid)">OnGetSensorsAsync(Guid)</h4>
@@ -835,6 +835,8 @@ public Task&lt;IActionResult&gt; OnGetFramesAsync([FromQuery, Required] Guid id,
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(Constants.ErrorMessages))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
 [SwaggerResponse(404, &quot;Id not found.&quot;, typeof(ErrorResponse))]
+[SwaggerResponse(410, &quot;Device is archived.&quot;, typeof(ErrorResponse))]
+[SwaggerResponse(424, &quot;Device is not reachable.&quot;, typeof(ErrorResponse))]
 public Task&lt;IActionResult&gt; OnGetSensorsAsync([FromQuery, Required] Guid id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -886,7 +888,10 @@ public Task&lt;IActionResult&gt; OnGetSensorsAsync([FromQuery, Required] Guid id
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="VPEAR.Core.Extensions.html#VPEAR_Core_Extensions_Clone__1___0_">Extensions.Clone&lt;T&gt;(T)</a>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_Clone__1___0_">TypeExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="VPEAR.Core.Extensions.TypeExtensions.html#VPEAR_Core_Extensions_TypeExtensions_ToJsonString__1___0_">TypeExtensions.ToJsonString&lt;T&gt;(T)</a>
   </div>
 </article>
           </div>
