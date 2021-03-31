@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Development </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Development ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="development">Development</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Some things have to be installed beforehand:</p>
+<ul>
+<li>Dotnet SDK
+<ul>
+<li>Install the dotnet sdk in version 5.0 from <a href="https://dotnet.microsoft.com/download/dotnet/5.0">here</a></li>
+<li><code>choco install dotnetsdk</code></li>
+</ul>
+</li>
+<li>Dotnet EF Core
+<ul>
+<li>Install the ef core command line tools</li>
+<li><code>dotnet tool install dotnet-ef -g</code></li>
+</ul>
+</li>
+<li>MariaDB
+<ul>
+<li>Install a local MariaDb Server in version 10.3 or newer</li>
+<li><code>choco install mariadb</code></li>
+</ul>
+</li>
+<li>Cake
+<ul>
+<li>You can install Cake as an global dotnet tool</li>
+<li><code>dotnet tool install --global Cake.Tool</code></li>
+</ul>
+</li>
+<li>Unity
+<ul>
+<li>If you want also build the Unity client, Unity 2020.3 LTS must als be installed</li>
+<li>Use the <a href="https://unity3d.com/de/get-unity/download">Unity Hub</a> to download the right version</li>
+</ul>
+</li>
+</ul>
+<h2 id="build-commands">Build Commands</h2>
+<p>The project uses the Cake build tool for the server, if you want to build the client you have to use the Unity IDE. The following commands are supported via <code>dotnet cake --target=&lt;command&gt; options ...</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clean</td>
+<td>-</td>
+<td>Cleans the output directories. Will be used be other commands.</td>
+</tr>
+<tr>
+<td>build</td>
+<td>--config=&lt;Debug,Release&gt;</td>
+<td>Builds the project with the given config. Default config is Debug.</td>
+</tr>
+<tr>
+<td>test</td>
+<td>--config=&lt;Debug,Release&gt;</td>
+<td>Runs the unit tests with the given config. Default config is Debug.</td>
+</tr>
+<tr>
+<td>run</td>
+<td>--config=&lt;Debug,Release&gt;</td>
+<td>Runs the server with the given config. Default config is Debug.</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>--config=&lt;Debug,Release&gt;</td>
+<td>Creates the projects documentation. Default config is Debug.</td>
+</tr>
+<tr>
+<td>migration-add</td>
+<td>--config=&lt;Debug,Release&gt;, --name=&lt;Name,&gt;</td>
+<td>Creates the migrations with the given name for the db. Default config is Debug. Only the Debug configuration has db seed data. The default name is Init.</td>
+</tr>
+<tr>
+<td>database-update</td>
+<td>--config=&lt;Debug,Release&gt;, --name=&lt;Name,&gt;</td>
+<td>Applies migrations with the given name to the db. Default config is Debug. Only the Debug configuration has db seed data. The default name is Init.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<p>Type in the folder with the <em>build.cake</em> file (should be project root).</p>
+<ul>
+<li>Run all unit test <code>dotnet cake --target=test</code></li>
+<li>Run server in release mode <code>dotnet cake --target=run --config=Release</code></li>
+<li>Create migration with seed data <code>dotnet cake --target=migration-add</code></li>
+<li>Apply migration to db <code>dotnet cake --target=database-update</code></li>
+</ul>
+<h2 id="run">Run</h2>
+<p>The server and client have to started in different ways.</p>
+<h3 id="vpearserver">VPEAR.Server</h3>
+<p>The steps to run the server:</p>
+<ul>
+<li>Make sure the prerequisites are fulfilled (Dotnet SDK, Dotnet EF Core, MariaDB, Cake)</li>
+<li>Make sure the you have the right configuration in your <em>appsettings.json</em></li>
+<li>Create a migration <code>dotnet cake --target=migration-add</code></li>
+<li>Apply the migration <code>dotnet cake --target=database-update</code></li>
+<li>Run the server <code>dotnet cake --target=run</code></li>
+</ul>
+<h3 id="vpearclient">VPEAR.Client</h3>
+<p>Open the VPEAR.Client project with the Unity IDE and deploy the app to your android smartphone.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/psachmann/vpear/blob/master/docs/articles/development.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

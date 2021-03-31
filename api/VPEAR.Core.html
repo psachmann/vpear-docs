@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace VPEAR.Core
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace VPEAR.Core
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VPEAR.Core">
+  
+  <h1 id="VPEAR_Core" data-uid="VPEAR.Core" class="text-break">Namespace VPEAR.Core
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="VPEAR.Core.DeviceClient.html">DeviceClient</a></h4>
+      <section><p>Implements the <a class="xref" href="VPEAR.Core.Abstractions.IDeviceClient.html">IDeviceClient</a> interface.
+This client gives access to a sensor device.
+NOTE: This class is only for the vpear server to connect to devices.</p>
+</section>
+      <h4><a class="xref" href="VPEAR.Core.Null.html">Null</a></h4>
+      <section><p>Dummy class for the <a class="xref" href="VPEAR.Core.Result-1.html">Result&lt;TSuccess&gt;</a> success or error type.
+NEVER instantiate this class, it will throw an <span class="xref">System.InvalidOperationException</span>.</p>
+</section>
+      <h4><a class="xref" href="VPEAR.Core.Result-1.html">Result&lt;TSuccess&gt;</a></h4>
+      <section><p>Wrapper for a service result.</p>
+</section>
+      <h4><a class="xref" href="VPEAR.Core.VPEARClient.html">VPEARClient</a></h4>
+      <section><p>This class implements <a class="xref" href="VPEAR.Core.Abstractions.IVPEARClient.html">IVPEARClient</a> interface and should
+provide and sdk like experience for communication with the vpear server.
+You can use via dependency injection with the interface or directly
+instantiate a vpear client.
+NOTE: If you use it with dependency injection register the client as singleton.</p>
+<p>
+USAGE:
+Before you use anything from the client, use the login method to get an
+authorization token and the rest will be handled by the client.
+NOTE: If you are not registered already use the register method, but
+it will take some time, because the admin has to verify the registration.
+</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="VPEAR.Core.DeviceStatus.html">DeviceStatus</a></h4>
+      <section><p>The current device state.</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="VPEAR.Core.DeviceClient.Factory.html">DeviceClient.Factory</a></h4>
+      <section><p>Autofac create a factory method with this delegate, because
+the baseAddress argument isn't known during resolution time
+and will be later provided.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
