@@ -4714,6 +4714,57 @@ references:
   isSpec: "True"
   fullName: VPEAR.Server.Data.DesignTimeVPEARDbContextFactory.CreateDbContext
   nameWithType: DesignTimeVPEARDbContextFactory.CreateDbContext
+- uid: VPEAR.Server.Data.Migrations
+  name: VPEAR.Server.Data.Migrations
+  href: api/VPEAR.Server.Data.Migrations.html
+  commentId: N:VPEAR.Server.Data.Migrations
+  fullName: VPEAR.Server.Data.Migrations
+  nameWithType: VPEAR.Server.Data.Migrations
+- uid: VPEAR.Server.Data.Migrations.Init
+  name: Init
+  href: api/VPEAR.Server.Data.Migrations.Init.html
+  commentId: T:VPEAR.Server.Data.Migrations.Init
+  fullName: VPEAR.Server.Data.Migrations.Init
+  nameWithType: Init
+- uid: VPEAR.Server.Data.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:VPEAR.Server.Data.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: VPEAR.Server.Data.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: Init.BuildTargetModel(ModelBuilder)
+- uid: VPEAR.Server.Data.Migrations.Init.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_BuildTargetModel_
+  commentId: Overload:VPEAR.Server.Data.Migrations.Init.BuildTargetModel
+  isSpec: "True"
+  fullName: VPEAR.Server.Data.Migrations.Init.BuildTargetModel
+  nameWithType: Init.BuildTargetModel
+- uid: VPEAR.Server.Data.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:VPEAR.Server.Data.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: VPEAR.Server.Data.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: Init.Down(MigrationBuilder)
+- uid: VPEAR.Server.Data.Migrations.Init.Down*
+  name: Down
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_Down_
+  commentId: Overload:VPEAR.Server.Data.Migrations.Init.Down
+  isSpec: "True"
+  fullName: VPEAR.Server.Data.Migrations.Init.Down
+  nameWithType: Init.Down
+- uid: VPEAR.Server.Data.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:VPEAR.Server.Data.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: VPEAR.Server.Data.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: Init.Up(MigrationBuilder)
+- uid: VPEAR.Server.Data.Migrations.Init.Up*
+  name: Up
+  href: api/VPEAR.Server.Data.Migrations.Init.html#VPEAR_Server_Data_Migrations_Init_Up_
+  commentId: Overload:VPEAR.Server.Data.Migrations.Init.Up
+  isSpec: "True"
+  fullName: VPEAR.Server.Data.Migrations.Init.Up
+  nameWithType: Init.Up
 - uid: VPEAR.Server.Data.Repository`3
   name: Repository<TDbContext, TEntity, TKey>
   href: api/VPEAR.Server.Data.Repository-3.html

@@ -194,7 +194,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_CreateAsync_" data-uid="VPEAR.Server.Data.Repository`3.CreateAsync*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_CreateAsync__1_" data-uid="VPEAR.Server.Data.Repository`3.CreateAsync(`1)">CreateAsync(TEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new database entry.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,7 +214,8 @@
       <tr>
         <td><span class="xref">TEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p>The entity to save in the database.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,7 +230,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p>The created entity.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -241,7 +244,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_DeleteAsync_" data-uid="VPEAR.Server.Data.Repository`3.DeleteAsync*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_DeleteAsync__1_" data-uid="VPEAR.Server.Data.Repository`3.DeleteAsync(`1)">DeleteAsync(TEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes an entry from the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -260,7 +264,8 @@
       <tr>
         <td><span class="xref">TEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p>The entry to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -275,7 +280,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -288,7 +294,9 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_Get_" data-uid="VPEAR.Server.Data.Repository`3.Get*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_Get" data-uid="VPEAR.Server.Data.Repository`3.Get">Get()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all entries from the database table.
+NOTE: Use this to make selects on the table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +313,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p><span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object for database queries.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,7 +327,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_GetAsync_" data-uid="VPEAR.Server.Data.Repository`3.GetAsync*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_GetAsync__2_" data-uid="VPEAR.Server.Data.Repository`3.GetAsync(`2)">GetAsync(TKey)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an entry from the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -337,7 +347,8 @@
       <tr>
         <td><span class="xref">TKey</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The id from the database entry.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -352,7 +363,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p>The complete entity or null, if id not exists.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -365,7 +377,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_SaveChanges_" data-uid="VPEAR.Server.Data.Repository`3.SaveChanges*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_SaveChanges" data-uid="VPEAR.Server.Data.Repository`3.SaveChanges">SaveChanges()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Save changes to the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -380,7 +393,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_SaveChangesAsync_" data-uid="VPEAR.Server.Data.Repository`3.SaveChangesAsync*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_SaveChangesAsync" data-uid="VPEAR.Server.Data.Repository`3.SaveChangesAsync">SaveChangesAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Save changes asynchronous to the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +411,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>An awaitable task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -410,7 +425,8 @@
   </span>
   <a id="VPEAR_Server_Data_Repository_3_UpdateAsync_" data-uid="VPEAR.Server.Data.Repository`3.UpdateAsync*"></a>
   <h4 id="VPEAR_Server_Data_Repository_3_UpdateAsync__1_" data-uid="VPEAR.Server.Data.Repository`3.UpdateAsync(`1)">UpdateAsync(TEntity)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates an entry in the database.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +445,8 @@
       <tr>
         <td><span class="xref">TEntity</span></td>
         <td><span class="parametername">entity</span></td>
-        <td></td>
+        <td><p>The entity to update.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +461,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
-        <td></td>
+        <td><p>The updated entity.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -180,7 +180,10 @@
   </span>
   <a id="VPEAR_Server_Services_SensorService_GetFramesAsync_" data-uid="VPEAR.Server.Services.SensorService.GetFramesAsync*"></a>
   <h4 id="VPEAR_Server_Services_SensorService_GetFramesAsync_System_Guid_System_Int32_System_Int32_" data-uid="VPEAR.Server.Services.SensorService.GetFramesAsync(System.Guid,System.Int32,System.Int32)">GetFramesAsync(Guid, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all frames from the start index plus count.
+If start and count 0, then all frames will be return.
+If start plus count bigger than the actual frames count, then all frames from start until the end will be returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,17 +202,20 @@
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The device id.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">start</span></td>
-        <td></td>
+        <td><p>The start index.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>The frames count.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,7 +230,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.Container-1.html">Container</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetFrameResponse.html">GetFrameResponse</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, witch contains the frames.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -237,7 +244,8 @@
   </span>
   <a id="VPEAR_Server_Services_SensorService_GetSensorsAsync_" data-uid="VPEAR.Server.Services.SensorService.GetSensorsAsync*"></a>
   <h4 id="VPEAR_Server_Services_SensorService_GetSensorsAsync_System_Guid_" data-uid="VPEAR.Server.Services.SensorService.GetSensorsAsync(System.Guid)">GetSensorsAsync(Guid)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the connected sensors for the given device.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,7 +264,8 @@
       <tr>
         <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The device id.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -271,7 +280,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="VPEAR.Core.Result-1.html">Result</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.Container-1.html">Container</a>&lt;<a class="xref" href="VPEAR.Core.Wrappers.GetSensorResponse.html">GetSensorResponse</a>&gt;&gt;&gt;</td>
-        <td></td>
+        <td><p>The result, which contains the connected sensors.</p>
+</td>
       </tr>
     </tbody>
   </table>

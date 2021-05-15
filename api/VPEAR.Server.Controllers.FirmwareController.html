@@ -698,6 +698,7 @@
   <h5 id="VPEAR_Server_Controllers_FirmwareController_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[ApiController]
+[Authorize(Roles = &quot;admin&quot;)]
 [Route(&quot;/api/v1/device/firmware&quot;)]
 public class FirmwareController : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
   </div>
@@ -708,7 +709,7 @@ public class FirmwareController : Controller, IActionFilter, IAsyncActionFilter,
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_FirmwareController__ctor_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__VPEAR_Core_Abstractions_IFirmwareService_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.FirmwareController.%23ctor(Microsoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.FirmwareController%7D%2CVPEAR.Core.Abstractions.IFirmwareService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L36">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L37">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_FirmwareController__ctor_" data-uid="VPEAR.Server.Controllers.FirmwareController.#ctor*"></a>
   <h4 id="VPEAR_Server_Controllers_FirmwareController__ctor_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_FirmwareController__VPEAR_Core_Abstractions_IFirmwareService_" data-uid="VPEAR.Server.Controllers.FirmwareController.#ctor(Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.FirmwareController},VPEAR.Core.Abstractions.IFirmwareService)">FirmwareController(ILogger&lt;FirmwareController&gt;, IFirmwareService)</h4>
@@ -750,17 +751,17 @@ public class FirmwareController : Controller, IActionFilter, IAsyncActionFilter,
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_FirmwareController_OnGetAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.FirmwareController.OnGetAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L49">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L51">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_FirmwareController_OnGetAsync_" data-uid="VPEAR.Server.Controllers.FirmwareController.OnGetAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_FirmwareController_OnGetAsync_System_Guid_" data-uid="VPEAR.Server.Controllers.FirmwareController.OnGetAsync(System.Guid)">OnGetAsync(Guid)</h4>
-  <div class="markdown level1 summary"><p>Gets the device firmware information.</p>
+  <div class="markdown level1 summary"><p>Gets the device firmware information.
+NOTE: Only for admin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpGet]
-[Authorize]
 [Produces(&quot;application/json&quot;, new string[]{})]
 [SwaggerResponse(200, &quot;Current device firmware information.&quot;, typeof(GetFirmwareResponse))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
@@ -809,17 +810,17 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery, Required] Guid id)</code
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_FirmwareController_OnPutAsync_System_Guid_VPEAR_Core_Wrappers_PutFirmwareRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.FirmwareController.OnPutAsync(System.Guid%2CVPEAR.Core.Wrappers.PutFirmwareRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L77">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/FirmwareController.cs/#L79">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_FirmwareController_OnPutAsync_" data-uid="VPEAR.Server.Controllers.FirmwareController.OnPutAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_FirmwareController_OnPutAsync_System_Guid_VPEAR_Core_Wrappers_PutFirmwareRequest_" data-uid="VPEAR.Server.Controllers.FirmwareController.OnPutAsync(System.Guid,VPEAR.Core.Wrappers.PutFirmwareRequest)">OnPutAsync(Guid, PutFirmwareRequest)</h4>
-  <div class="markdown level1 summary"><p>Updates the device firmware information.</p>
+  <div class="markdown level1 summary"><p>Updates the device firmware information.
+NOTE: Only for admin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPut]
-[Authorize(Roles = &quot;admin&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
 [SwaggerResponse(204, &quot;Firmware information were saved to device and db.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]

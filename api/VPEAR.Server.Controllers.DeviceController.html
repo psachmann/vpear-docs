@@ -697,8 +697,7 @@
   <h6><strong>Assembly</strong>: VPEAR.Server.dll</h6>
   <h5 id="VPEAR_Server_Controllers_DeviceController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Authorize]
-[Route(&quot;/api/v1/device&quot;)]
+    <pre><code class="lang-csharp hljs">[Route(&quot;/api/v1/device&quot;)]
 [Produces(&quot;application/json&quot;, new string[]{})]
 [ApiController]
 public class DeviceController : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
@@ -710,7 +709,7 @@ public class DeviceController : Controller, IActionFilter, IAsyncActionFilter, I
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController__ctor_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__VPEAR_Core_Abstractions_IDeviceService_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.%23ctor(Microsoft.Extensions.Logging.ILogger%7BVPEAR.Server.Controllers.DeviceController%7D%2CVPEAR.Core.Abstractions.IDeviceService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L38">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L37">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController__ctor_" data-uid="VPEAR.Server.Controllers.DeviceController.#ctor*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController__ctor_Microsoft_Extensions_Logging_ILogger_VPEAR_Server_Controllers_DeviceController__VPEAR_Core_Abstractions_IDeviceService_" data-uid="VPEAR.Server.Controllers.DeviceController.#ctor(Microsoft.Extensions.Logging.ILogger{VPEAR.Server.Controllers.DeviceController},VPEAR.Core.Abstractions.IDeviceService)">DeviceController(ILogger&lt;DeviceController&gt;, IDeviceService)</h4>
@@ -752,16 +751,18 @@ public class DeviceController : Controller, IActionFilter, IAsyncActionFilter, I
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnDeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L124">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L127">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnDeleteAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnDeleteAsync_System_Guid_" data-uid="VPEAR.Server.Controllers.DeviceController.OnDeleteAsync(System.Guid)">OnDeleteAsync(Guid)</h4>
-  <div class="markdown level1 summary"><p>Deletes the given device.</p>
+  <div class="markdown level1 summary"><p>Deletes the given device.
+NOTE: Only for admin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpDelete]
+[Authorize(Roles = &quot;admin&quot;)]
 [SwaggerResponse(204, &quot;Device was deleted.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
@@ -808,7 +809,7 @@ public Task&lt;IActionResult&gt; OnDeleteAsync([FromQuery, Required] Guid id)</c
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnGetAsync_System_Nullable_VPEAR_Core_DeviceStatus__.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnGetAsync(System.Nullable%7BVPEAR.Core.DeviceStatus%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L52">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L51">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnGetAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnGetAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnGetAsync_System_Nullable_VPEAR_Core_DeviceStatus__" data-uid="VPEAR.Server.Controllers.DeviceController.OnGetAsync(System.Nullable{VPEAR.Core.DeviceStatus})">OnGetAsync(Nullable&lt;DeviceStatus&gt;)</h4>
@@ -819,6 +820,7 @@ A GET request without any query parameters returns all devices.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpGet]
+[Authorize]
 [SwaggerResponse(200, &quot;Current device information.&quot;, typeof(Container&lt;GetDeviceResponse&gt;))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
@@ -864,7 +866,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery] DeviceStatus? status)</c
     <a href="https://github.com/psachmann/vpear/new/develop/apiSpec/new?filename=VPEAR_Server_Controllers_DeviceController_OnPostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_.md&amp;value=---%0Auid%3A%20VPEAR.Server.Controllers.DeviceController.OnPostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L108">View Source</a>
+    <a href="https://github.com/psachmann/vpear/blob/develop/src/VPEAR.Server/Controllers/DeviceController.cs/#L109">View Source</a>
   </span>
   <a id="VPEAR_Server_Controllers_DeviceController_OnPostAsync_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPostAsync*"></a>
   <h4 id="VPEAR_Server_Controllers_DeviceController_OnPostAsync_VPEAR_Core_Wrappers_PostDeviceRequest_" data-uid="VPEAR.Server.Controllers.DeviceController.OnPostAsync(VPEAR.Core.Wrappers.PostDeviceRequest)">OnPostAsync(PostDeviceRequest)</h4>
@@ -874,6 +876,7 @@ public Task&lt;IActionResult&gt; OnGetAsync([FromQuery] DeviceStatus? status)</c
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPost]
+[Authorize(Roles = &quot;admin&quot;)]
 [SwaggerResponse(202, &quot;Searching for devices.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;The address or subnet mask are not IPv4 addresses.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
@@ -934,6 +937,7 @@ from 10.0.0.1 to 10.0.0.254 (network address and broadcast address will be exclu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPut]
+[Authorize]
 [SwaggerResponse(204, &quot;Changes were saved to db and device.&quot;, typeof(Null))]
 [SwaggerResponse(400, &quot;Wrong request format.&quot;, typeof(ErrorResponse))]
 [SwaggerResponse(401, &quot;Request is unauthorized.&quot;, typeof(Null))]
@@ -989,7 +993,7 @@ Import: don't go higher then 360, because the device is slow and has a large del
 Note: with the device status you can start and stop recording. For example, if the current status
 is stopped and the request update it to recording, the server will start polling with the current frequency.
 If the device is not reachable, you can put the status to stopped or recording and the server will try to
-reconnect with the device. An archived device is readonly and can't be changed.</p>
+reconnect with the device. An archived device is read only and can't be changed.</p>
 </div>
   <h3 id="implements">Implements</h3>
   <div>

@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.DeviceController.html",
-          "hash": "Id0+P6upYtfzeZqMdd8TfGitqk1F5PskKdqi5EU6rUg="
+          "hash": "UlRDjFn2G6CB8Y8ADFJNCwJPA1h1pXz2dqGqHhqX7Sc="
         }
       },
       "is_incremental": true,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.FirmwareController.html",
-          "hash": "mDx6XQP+byYmdlz25G5dl3c+SpNR1CB6m/ypD3diDh4="
+          "hash": "6Ok1xM6qUS3k2Gp7Ej0oxecFOAHf5ADFvRGgiqJH348="
         }
       },
       "is_incremental": true,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.UserController.html",
-          "hash": "mErwbDRMj2C5hTDor1La46ApRLA7Hhhw2C6YokoSzHU="
+          "hash": "w+oqINbmOf+AqKW3raFF6wGW1B9tNhbmIFXyDz/+dN8="
         }
       },
       "is_incremental": true,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Controllers.WifiController.html",
-          "hash": "y3xWDEBBepwhdGS65qYF5IvTh6rBD26bGQCD7o05PoI="
+          "hash": "GxdZ77x7kwPCi6AvlAf2fe81z9dz1nwfGWZcxPgQiNo="
         }
       },
       "is_incremental": true,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Data.Configuration.DeviceConfiguration.html",
-          "hash": "fI0oblyre7v56uzPwYepkzkhFa6HDX+ImZpMzBYPmuM="
+          "hash": "UClNhn7OtvHvv87LnE2Lh3DsMfN/aI6iydAZJQt+OLg="
         }
       },
       "is_incremental": true,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Data.Configuration.FilterConfiguration.html",
-          "hash": "w3dYAZWfRCJHxmwtzSHqJiQtfaUKsyUk0yZUTv9g10E="
+          "hash": "/qEBlJK3u60PPR/XidSjghEd+DNcX62DQEhq7TYTyP0="
         }
       },
       "is_incremental": true,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Data.Configuration.FrameConfiguration.html",
-          "hash": "l3w9qFcRQJKvDi5pveA4EkLa8eKlX51WpMtRh/ilNOk="
+          "hash": "foMvs21HUyDYXxjsF+vGvPiwwquuoFAVLntRXcogMGo="
         }
       },
       "is_incremental": true,
@@ -917,11 +917,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Data.Migrations.Init.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Data.Migrations.Init.html",
+          "hash": "Ici0x8JBGoekeQMPXV0UMjd6ZwIz+5yTdAcqoRDi+mI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VPEAR.Server.Data.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VPEAR.Server.Data.Migrations.html",
+          "hash": "ZUnoMnsk8XB6V14Dh1fbPPkNykD/fVNc3Gp6hFleasc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VPEAR.Server.Data.Repository-3.yml",
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Data.Repository-3.html",
-          "hash": "fVgxnpc5URga7pDJJo4Cf2p9Xe2oKQ6afXynuWOpjw4="
+          "hash": "b0u35TnfQcoMLzfWiboU0l/JLWdPzBc9ZfufjnTqRhY="
         }
       },
       "is_incremental": true,
@@ -1113,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.DeviceService.html",
-          "hash": "AVHZP/2oGEmRyxyFlu9AKLx1C1hx4EqcYLQwN/WvciA="
+          "hash": "7OJazz0VmDUR6aMOvGDghjW1T7hymgAMbkQxaxNsGRw="
         }
       },
       "is_incremental": true,
@@ -1125,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.FilterService.html",
-          "hash": "FOCZtzroDiO5b4N8kpdPzmHNKj5mwaWDsOu+/iBOYf0="
+          "hash": "v/YyXmrg7YXyfACfo33oj1f06QJO9ijCjYCHOrHOyuY="
         }
       },
       "is_incremental": true,
@@ -1137,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.FirmwareService.html",
-          "hash": "PlOMUUkYqFvEr4t3WqWwU73iUIqsQajLdX9cmXg5ZOI="
+          "hash": "Z5pRuAl6Pvie9XTQm61UGKGoMG36mbRNp49mRI/93f0="
         }
       },
       "is_incremental": true,
@@ -1185,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.PowerService.html",
-          "hash": "KzEASd6z3aLz3iaGgQqATEXJCC8YAh5PNxgMdnZLMLU="
+          "hash": "+f090wYaD2c7VqGMhnpu/dBRDQDF8Ua+mLTXogvziMs="
         }
       },
       "is_incremental": true,
@@ -1197,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.SensorService.html",
-          "hash": "AyZB5ScbqxDaMq1jY0urJiUpbph3IFe0YZpeCwjkCe4="
+          "hash": "ruXZZHgFcehJBES2s9DYlO448MqhfQFvN1BT9ubwj9M="
         }
       },
       "is_incremental": true,
@@ -1209,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.UserService.html",
-          "hash": "5+rAKnXUGBTq4e1Dl4JQhCsUDznVGTtBXusygProoRQ="
+          "hash": "2ZF9yUOcu03LK3bnYmZlUYYK7dzaZGsDrC48utNBI5c="
         }
       },
       "is_incremental": true,
@@ -1221,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VPEAR.Server.Services.WifiService.html",
-          "hash": "a+4ifUlbBjg4wxm1kWb5elNey0c4yHkfeEN3m+Lhvw0="
+          "hash": "KiUSGntr6Ask+xZDgYqVj9DjejsL5W2VARVOYezWGdc="
         }
       },
       "is_incremental": true,
@@ -1389,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "2jDo3qHJUzxGIg2ewVMtLwWflizxGejasNgQJSAXQxc="
+          "hash": "jGCbwhaT4b0DfoNvTrYLjhR/J8xbKa+ePkXYn5tYjOM="
         }
       },
       "is_incremental": false,
@@ -1501,8 +1525,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 114,
-          "skipped_file_count": 114
+          "total_file_count": 116,
+          "skipped_file_count": 116
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
